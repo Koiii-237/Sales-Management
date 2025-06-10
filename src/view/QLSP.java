@@ -36,7 +36,7 @@ public class QLSP extends javax.swing.JFrame {
         txtDongia = new javax.swing.JTextField();
         txtNgaynhap = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tbQLSP = new javax.swing.JTable();
+        tblQLSP = new javax.swing.JTable();
         btnLammoi = new javax.swing.JButton();
         btnThem = new javax.swing.JButton();
         btnSua = new javax.swing.JButton();
@@ -56,7 +56,7 @@ public class QLSP extends javax.swing.JFrame {
 
         lbNgaynhap.setText("Ngày nhập:");
 
-        tbQLSP.setModel(new javax.swing.table.DefaultTableModel(
+        tblQLSP.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -67,7 +67,7 @@ public class QLSP extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(tbQLSP);
+        jScrollPane1.setViewportView(tblQLSP);
 
         btnLammoi.setText("LÀM MỚI");
 
@@ -211,7 +211,7 @@ public class QLSP extends javax.swing.JFrame {
     private javax.swing.JLabel lbMasp;
     private javax.swing.JLabel lbNgaynhap;
     private javax.swing.JLabel lbTensp;
-    private javax.swing.JTable tbQLSP;
+    private javax.swing.JTable tblQLSP;
     private javax.swing.JTextField txtDongia;
     private javax.swing.JTextField txtMasp;
     private javax.swing.JTextField txtNgaynhap;

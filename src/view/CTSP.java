@@ -35,7 +35,7 @@ public class CTSP extends javax.swing.JFrame {
         txtDongia = new javax.swing.JTextField();
         txtNgaynhap = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tbQLSP = new javax.swing.JTable();
+        tblCTSP = new javax.swing.JTable();
         lbChitietsanpham = new javax.swing.JLabel();
         btnLammoi = new javax.swing.JButton();
         lbMasp = new javax.swing.JLabel();
@@ -66,7 +66,7 @@ public class CTSP extends javax.swing.JFrame {
 
         lbNgaynhap.setText("Ngày nhập:");
 
-        tbQLSP.setModel(new javax.swing.table.DefaultTableModel(
+        tblCTSP.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -77,7 +77,7 @@ public class CTSP extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(tbQLSP);
+        jScrollPane1.setViewportView(tblCTSP);
 
         lbChitietsanpham.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lbChitietsanpham.setForeground(new java.awt.Color(0, 0, 255));
@@ -239,7 +239,7 @@ public class CTSP extends javax.swing.JFrame {
     private javax.swing.JLabel lbNgaynhap;
     private javax.swing.JLabel lbSoluongSP;
     private javax.swing.JLabel lbTensp;
-    private javax.swing.JTable tbQLSP;
+    private javax.swing.JTable tblCTSP;
     private javax.swing.JTextField txtDongia;
     private javax.swing.JTextField txtMaCTSP;
     private javax.swing.JTextField txtMasp;

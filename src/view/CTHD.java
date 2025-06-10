@@ -45,6 +45,8 @@ public class CTHD extends javax.swing.JFrame {
         txtMaKM = new javax.swing.JTextField();
         btnThem = new javax.swing.JButton();
         lbCTHD = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblCTHD = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,6 +104,19 @@ public class CTHD extends javax.swing.JFrame {
         lbCTHD.setForeground(new java.awt.Color(0, 0, 255));
         lbCTHD.setText("CHI TIẾT HÓA ĐƠN");
 
+        tblCTHD.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tblCTHD);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -142,6 +157,10 @@ public class CTHD extends javax.swing.JFrame {
                     .addComponent(btnLammoi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnXoa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,7 +208,9 @@ public class CTHD extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbDongia)
                     .addComponent(txtDongia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(373, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -255,6 +276,7 @@ public class CTHD extends javax.swing.JFrame {
     private javax.swing.JButton btnSua2;
     private javax.swing.JButton btnThem;
     private javax.swing.JButton btnXoa;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbCTHD;
     private javax.swing.JLabel lbDongia;
     private javax.swing.JLabel lbMaCTHD;
@@ -263,6 +285,7 @@ public class CTHD extends javax.swing.JFrame {
     private javax.swing.JLabel lbMaNV;
     private javax.swing.JLabel lbSoluong;
     private javax.swing.JLabel lbTrangthai;
+    private javax.swing.JTable tblCTHD;
     private javax.swing.JTextField txtDongia;
     private javax.swing.JTextField txtMaCTHD;
     private javax.swing.JTextField txtMaCTSP;
