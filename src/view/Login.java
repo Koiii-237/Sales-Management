@@ -33,64 +33,77 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtMaNV = new javax.swing.JTextField();
-        txtMK = new javax.swing.JTextField();
-        btnDangNhap = new javax.swing.JButton();
+        lbDangnhap = new javax.swing.JLabel();
+        txtTendangnhap = new javax.swing.JTextField();
+        lbTendangnhap = new javax.swing.JLabel();
+        lbMatkhau = new javax.swing.JLabel();
+        txtMatkhau = new javax.swing.JTextField();
+        btnDangnhap = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnDangNhap.setText("Login");
-        btnDangNhap.addActionListener(new java.awt.event.ActionListener() {
+        lbDangnhap.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lbDangnhap.setText("Đăng Nhập");
+
+        txtTendangnhap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDangNhapActionPerformed(evt);
+                txtTendangnhapActionPerformed(evt);
             }
         });
+
+        lbTendangnhap.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lbTendangnhap.setText("Tên đăng nhập");
+
+        lbMatkhau.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lbMatkhau.setText("Mật khẩu");
+
+        btnDangnhap.setText("Đăng nhập");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnDangNhap)
-                    .addComponent(txtMK, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtMaNV, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(222, 222, 222)
+                        .addComponent(lbDangnhap))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lbTendangnhap)
+                            .addComponent(lbMatkhau)
+                            .addComponent(txtTendangnhap)
+                            .addComponent(txtMatkhau, javax.swing.GroupLayout.DEFAULT_SIZE, 367, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(171, 171, 171)
+                        .addComponent(btnDangnhap, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(134, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(txtMaNV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(lbDangnhap)
+                .addGap(11, 11, 11)
+                .addComponent(lbTendangnhap)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtTendangnhap, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(lbMatkhau)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtMK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnDangNhap)
-                .addContainerGap(171, Short.MAX_VALUE))
+                .addComponent(txtMatkhau, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(btnDangnhap, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnDangNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDangNhapActionPerformed
+    private void txtTendangnhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTendangnhapActionPerformed
         // TODO add your handling code here:
-        NhanVien nv = new NhanVien();
-        nv.setMa(txtMaNV.getText());
-        nv.setMatKhau(txtMK.getText());
-        try {
-            for(NhanVien n : qlnv.getAll()){
-                if(n.getMa().equals(nv.getMa()) && n.getMatKhau().equals(nv.getMatKhau())){
-                    TrangChu tc = new TrangChu(nv);
-                    tc.setVisible(true);
-                }
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_btnDangNhapActionPerformed
+    }//GEN-LAST:event_txtTendangnhapActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,8 +142,11 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDangNhap;
-    private javax.swing.JTextField txtMK;
-    private javax.swing.JTextField txtMaNV;
+    private javax.swing.JButton btnDangnhap;
+    private javax.swing.JLabel lbDangnhap;
+    private javax.swing.JLabel lbMatkhau;
+    private javax.swing.JLabel lbTendangnhap;
+    private javax.swing.JTextField txtMatkhau;
+    private javax.swing.JTextField txtTendangnhap;
     // End of variables declaration//GEN-END:variables
 }
