@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view;
 
@@ -8,7 +8,7 @@ package view;
  *
  * @author ADMIN
  */
-public class CTKM extends javax.swing.JFrame {
+public class CTKM extends javax.swing.JPanel {
 
     /**
      * Creates new form CTKM
@@ -26,57 +26,201 @@ public class CTKM extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        lbThoigianbatdau = new javax.swing.JLabel();
+        btnXoa = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblCTKM = new javax.swing.JTable();
+        lbMaSP = new javax.swing.JLabel();
+        txtThoigianketthuc = new javax.swing.JTextField();
+        btnLammoi = new javax.swing.JButton();
+        lbThoigianketthuc = new javax.swing.JLabel();
+        lbMaKM = new javax.swing.JLabel();
+        txtMaKM = new javax.swing.JTextField();
+        btnSua2 = new javax.swing.JButton();
+        lbPhantramKM = new javax.swing.JLabel();
+        btnThem = new javax.swing.JButton();
+        txtPhantramKM = new javax.swing.JTextField();
+        txtMaSP = new javax.swing.JTextField();
+        txtThoigianbatdau = new javax.swing.JTextField();
+        lbCTHD = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        lbThoigianbatdau.setText("Thời gian bắt đầu:");
+
+        btnXoa.setText("XÓA");
+        btnXoa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnXoaActionPerformed(evt);
+            }
+        });
+
+        tblCTKM.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tblCTKM);
+
+        lbMaSP.setText("Mã SP:");
+
+        txtThoigianketthuc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtThoigianketthucActionPerformed(evt);
+            }
+        });
+
+        btnLammoi.setText("LÀM MỚI");
+
+        lbThoigianketthuc.setText("Thời gian kết thúc:");
+
+        lbMaKM.setText("Mã KM:");
+
+        txtMaKM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMaKMActionPerformed(evt);
+            }
+        });
+
+        btnSua2.setText("SỬA");
+        btnSua2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSua2ActionPerformed(evt);
+            }
+        });
+
+        lbPhantramKM.setText("Phần trăm KM:");
+
+        btnThem.setText("THÊM");
+
+        txtPhantramKM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPhantramKMActionPerformed(evt);
+            }
+        });
+
+        lbCTHD.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lbCTHD.setForeground(new java.awt.Color(0, 0, 255));
+        lbCTHD.setText("CHƯƠNG TRÌNH KHUYẾN MÃI");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 538, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lbMaKM)
+                            .addComponent(lbThoigianbatdau)
+                            .addComponent(lbPhantramKM)
+                            .addComponent(lbThoigianketthuc)
+                            .addComponent(lbMaSP))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPhantramKM, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtMaKM, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtThoigianbatdau, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbCTHD)
+                            .addComponent(txtThoigianketthuc, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtMaSP, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(94, 94, 94)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSua2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnThem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnLammoi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnXoa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(557, 557, 557))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 449, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbCTHD)
+                .addGap(50, 50, 50)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbMaKM)
+                            .addComponent(txtMaKM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbPhantramKM)
+                            .addComponent(txtPhantramKM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbThoigianbatdau)
+                            .addComponent(txtThoigianbatdau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(36, 36, 36)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbThoigianketthuc, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtThoigianketthuc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnLammoi)
+                        .addGap(53, 53, 53)
+                        .addComponent(btnThem)
+                        .addGap(27, 27, 27)
+                        .addComponent(btnSua2)
+                        .addGap(51, 51, 51)
+                        .addComponent(btnXoa)))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbMaSP)
+                    .addComponent(txtMaSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CTKM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CTKM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CTKM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CTKM.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnXoaActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CTKM().setVisible(true);
-            }
-        });
-    }
+    private void txtThoigianketthucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtThoigianketthucActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtThoigianketthucActionPerformed
+
+    private void btnSua2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSua2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSua2ActionPerformed
+
+    private void txtPhantramKMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPhantramKMActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPhantramKMActionPerformed
+
+    private void txtMaKMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaKMActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMaKMActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnLammoi;
+    private javax.swing.JButton btnSua2;
+    private javax.swing.JButton btnThem;
+    private javax.swing.JButton btnXoa;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lbCTHD;
+    private javax.swing.JLabel lbMaKM;
+    private javax.swing.JLabel lbMaSP;
+    private javax.swing.JLabel lbPhantramKM;
+    private javax.swing.JLabel lbThoigianbatdau;
+    private javax.swing.JLabel lbThoigianketthuc;
+    private javax.swing.JTable tblCTKM;
+    private javax.swing.JTextField txtMaKM;
+    private javax.swing.JTextField txtMaSP;
+    private javax.swing.JTextField txtPhantramKM;
+    private javax.swing.JTextField txtThoigianbatdau;
+    private javax.swing.JTextField txtThoigianketthuc;
     // End of variables declaration//GEN-END:variables
 }

@@ -138,19 +138,9 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="btnLammoi">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="L&#xc0;M M&#x1eda;I"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="lbMaCTHD">
       <Properties>
         <Property name="text" type="java.lang.String" value="M&#xe3; CTHD:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbMaNV">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="M&#xe3; KM:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbMaHD">
@@ -158,17 +148,7 @@
         <Property name="text" type="java.lang.String" value="M&#xe3; HD:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtMaHD">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMaHDActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="txtMaCTSP">
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbTrangthai">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Tr&#x1ea1;ng th&#xe1;i:"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnXoa">
       <Properties>
@@ -178,24 +158,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnXoaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbDongia">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="&#x110;&#x1a1;n gi&#xe1;:"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JTextField" name="txtMaCTHD">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtTenSP">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTenSPActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbSoluong">
       <Properties>
         <Property name="text" type="java.lang.String" value="T&#xea;n SP:"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtMaKM">
     </Component>
     <Component class="javax.swing.JButton" name="btnSua2">
       <Properties>
@@ -205,12 +173,54 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSua2ActionPerformed"/>
       </Events>
     </Component>
+    <Component class="javax.swing.JTextField" name="txtDongia">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbMaCTSP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M&#xe3; CTSP:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTrangthai">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTrangthaiActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnLammoi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="L&#xc0;M M&#x1eda;I"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbMaNV">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M&#xe3; KM:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMaHD">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMaHDActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbTrangthai">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tr&#x1ea1;ng th&#xe1;i:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbDongia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x110;&#x1a1;n gi&#xe1;:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTenSP">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTenSPActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMaKM">
+    </Component>
     <Component class="javax.swing.JButton" name="btnThem">
       <Properties>
         <Property name="text" type="java.lang.String" value="TH&#xca;M"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtDongia">
     </Component>
     <Component class="javax.swing.JLabel" name="lbCTHD">
       <Properties>
@@ -221,11 +231,6 @@
           <Color blue="ff" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="CHI TI&#x1ebe;T H&#xd3;A &#x110;&#x1a0;N"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbMaCTSP">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="M&#xe3; CTSP:"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -249,10 +254,5 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="txtTrangthai">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTrangthaiActionPerformed"/>
-      </Events>
-    </Component>
   </SubComponents>
 </Form>

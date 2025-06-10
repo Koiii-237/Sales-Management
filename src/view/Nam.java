@@ -8,12 +8,12 @@ package view;
  *
  * @author ADMIN
  */
-public class CTHD extends javax.swing.JPanel {
+public class Nam extends javax.swing.JPanel {
 
     /**
-     * Creates new form CTHD
+     * Creates new form Nam
      */
-    public CTHD() {
+    public Nam() {
         initComponents();
     }
 
@@ -26,56 +26,36 @@ public class CTHD extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnLammoi = new javax.swing.JButton();
         lbMaCTHD = new javax.swing.JLabel();
-        lbMaNV = new javax.swing.JLabel();
         lbMaHD = new javax.swing.JLabel();
-        txtMaHD = new javax.swing.JTextField();
         txtMaCTSP = new javax.swing.JTextField();
-        lbTrangthai = new javax.swing.JLabel();
         btnXoa = new javax.swing.JButton();
-        lbDongia = new javax.swing.JLabel();
         txtMaCTHD = new javax.swing.JTextField();
-        txtTenSP = new javax.swing.JTextField();
         lbSoluong = new javax.swing.JLabel();
-        txtMaKM = new javax.swing.JTextField();
         btnSua2 = new javax.swing.JButton();
-        btnThem = new javax.swing.JButton();
         txtDongia = new javax.swing.JTextField();
-        lbCTHD = new javax.swing.JLabel();
         lbMaCTSP = new javax.swing.JLabel();
+        txtTrangthai = new javax.swing.JTextField();
+        btnLammoi = new javax.swing.JButton();
+        lbMaNV = new javax.swing.JLabel();
+        txtMaHD = new javax.swing.JTextField();
+        lbTrangthai = new javax.swing.JLabel();
+        lbDongia = new javax.swing.JLabel();
+        txtTenSP = new javax.swing.JTextField();
+        txtMaKM = new javax.swing.JTextField();
+        btnThem = new javax.swing.JButton();
+        lbCTHD = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCTHD = new javax.swing.JTable();
-        txtTrangthai = new javax.swing.JTextField();
-
-        btnLammoi.setText("LÀM MỚI");
 
         lbMaCTHD.setText("Mã CTHD:");
 
-        lbMaNV.setText("Mã KM:");
-
         lbMaHD.setText("Mã HD:");
-
-        txtMaHD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtMaHDActionPerformed(evt);
-            }
-        });
-
-        lbTrangthai.setText("Trạng thái:");
 
         btnXoa.setText("XÓA");
         btnXoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnXoaActionPerformed(evt);
-            }
-        });
-
-        lbDongia.setText("Đơn giá:");
-
-        txtTenSP.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTenSPActionPerformed(evt);
             }
         });
 
@@ -88,13 +68,39 @@ public class CTHD extends javax.swing.JPanel {
             }
         });
 
+        lbMaCTSP.setText("Mã CTSP:");
+
+        txtTrangthai.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTrangthaiActionPerformed(evt);
+            }
+        });
+
+        btnLammoi.setText("LÀM MỚI");
+
+        lbMaNV.setText("Mã KM:");
+
+        txtMaHD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMaHDActionPerformed(evt);
+            }
+        });
+
+        lbTrangthai.setText("Trạng thái:");
+
+        lbDongia.setText("Đơn giá:");
+
+        txtTenSP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTenSPActionPerformed(evt);
+            }
+        });
+
         btnThem.setText("THÊM");
 
         lbCTHD.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lbCTHD.setForeground(new java.awt.Color(0, 0, 255));
         lbCTHD.setText("CHI TIẾT HÓA ĐƠN");
-
-        lbMaCTSP.setText("Mã CTSP:");
 
         tblCTHD.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -108,12 +114,6 @@ public class CTHD extends javax.swing.JPanel {
             }
         ));
         jScrollPane1.setViewportView(tblCTHD);
-
-        txtTrangthai.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTrangthaiActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -212,17 +212,9 @@ public class CTHD extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtMaHDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaHDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtMaHDActionPerformed
-
     private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnXoaActionPerformed
-
-    private void txtTenSPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTenSPActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtTenSPActionPerformed
 
     private void btnSua2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSua2ActionPerformed
         // TODO add your handling code here:
@@ -231,6 +223,14 @@ public class CTHD extends javax.swing.JPanel {
     private void txtTrangthaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTrangthaiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTrangthaiActionPerformed
+
+    private void txtMaHDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMaHDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMaHDActionPerformed
+
+    private void txtTenSPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTenSPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTenSPActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
