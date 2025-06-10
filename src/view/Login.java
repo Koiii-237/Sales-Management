@@ -4,7 +4,7 @@
  */
 package view;
 
-import DBPOOL.QLNV;
+
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,10 +19,7 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form TrangChu
      */
-    QLNV qlnv = new QLNV();
-    public Login() {
-        initComponents();
-    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

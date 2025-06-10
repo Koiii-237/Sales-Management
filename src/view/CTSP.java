@@ -41,8 +41,8 @@ public class CTSP extends javax.swing.JFrame {
         lbMasp = new javax.swing.JLabel();
         btnThem = new javax.swing.JButton();
         lbTensp = new javax.swing.JLabel();
-        lbMasp1 = new javax.swing.JLabel();
-        txtMapCTSP = new javax.swing.JTextField();
+        lbMaCTSP = new javax.swing.JLabel();
+        txtMaCTSP = new javax.swing.JTextField();
         lbSoluongSP = new javax.swing.JLabel();
         txtSoluongSP = new javax.swing.JTextField();
 
@@ -91,7 +91,7 @@ public class CTSP extends javax.swing.JFrame {
 
         lbTensp.setText("Tên SP:");
 
-        lbMasp1.setText("Mã CTSP:");
+        lbMaCTSP.setText("Mã CTSP:");
 
         lbSoluongSP.setText("Số lượng SP:");
 
@@ -126,14 +126,14 @@ public class CTSP extends javax.swing.JFrame {
                                             .addComponent(lbTensp)))
                                     .addGroup(layout.createSequentialGroup()
                                         .addContainerGap()
-                                        .addComponent(lbMasp1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(lbMaCTSP, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(16, 16, 16)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtMasp)
                                     .addComponent(txtTensp)
                                     .addComponent(txtDongia, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(txtNgaynhap, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtMapCTSP))))
+                                    .addComponent(txtMaCTSP))))
                         .addGap(51, 51, 51)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnSua, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -169,8 +169,8 @@ public class CTSP extends javax.swing.JFrame {
                     .addComponent(btnXoa))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbMasp1)
-                    .addComponent(txtMapCTSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbMaCTSP)
+                    .addComponent(txtMaCTSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtSoluongSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -234,14 +234,14 @@ public class CTSP extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbChitietsanpham;
     private javax.swing.JLabel lbDongia;
+    private javax.swing.JLabel lbMaCTSP;
     private javax.swing.JLabel lbMasp;
-    private javax.swing.JLabel lbMasp1;
     private javax.swing.JLabel lbNgaynhap;
     private javax.swing.JLabel lbSoluongSP;
     private javax.swing.JLabel lbTensp;
     private javax.swing.JTable tbQLSP;
     private javax.swing.JTextField txtDongia;
-    private javax.swing.JTextField txtMapCTSP;
+    private javax.swing.JTextField txtMaCTSP;
     private javax.swing.JTextField txtMasp;
     private javax.swing.JTextField txtNgaynhap;
     private javax.swing.JTextField txtSoluongSP;
