@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view;
 
@@ -8,7 +8,7 @@ package view;
  *
  * @author ADMIN
  */
-public class CTSP extends javax.swing.JFrame {
+public class CTSP extends javax.swing.JPanel {
 
     /**
      * Creates new form CTSP
@@ -26,27 +26,31 @@ public class CTSP extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lbChitietsanpham = new javax.swing.JLabel();
+        btnLammoi = new javax.swing.JButton();
         btnSua = new javax.swing.JButton();
+        lbMasp = new javax.swing.JLabel();
         lbDongia = new javax.swing.JLabel();
+        btnThem = new javax.swing.JButton();
         btnXoa = new javax.swing.JButton();
+        lbTensp = new javax.swing.JLabel();
         lbNgaynhap = new javax.swing.JLabel();
+        lbMaCTSP = new javax.swing.JLabel();
         txtMasp = new javax.swing.JTextField();
+        txtMaCTSP = new javax.swing.JTextField();
         txtTensp = new javax.swing.JTextField();
+        lbSoluongSP = new javax.swing.JLabel();
         txtDongia = new javax.swing.JTextField();
+        txtSoluongSP = new javax.swing.JTextField();
         txtNgaynhap = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCTSP = new javax.swing.JTable();
-        lbChitietsanpham = new javax.swing.JLabel();
-        btnLammoi = new javax.swing.JButton();
-        lbMasp = new javax.swing.JLabel();
-        btnThem = new javax.swing.JButton();
-        lbTensp = new javax.swing.JLabel();
-        lbMaCTSP = new javax.swing.JLabel();
-        txtMaCTSP = new javax.swing.JTextField();
-        lbSoluongSP = new javax.swing.JLabel();
-        txtSoluongSP = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        lbChitietsanpham.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lbChitietsanpham.setForeground(new java.awt.Color(0, 0, 255));
+        lbChitietsanpham.setText("Chi Tiết Sản Phẩm");
+
+        btnLammoi.setText("LÀM MỚI");
 
         btnSua.setText("SỬA");
         btnSua.addActionListener(new java.awt.event.ActionListener() {
@@ -55,7 +59,11 @@ public class CTSP extends javax.swing.JFrame {
             }
         });
 
+        lbMasp.setText("Mã SP:");
+
         lbDongia.setText("Đơn giá:");
+
+        btnThem.setText("THÊM");
 
         btnXoa.setText("XÓA");
         btnXoa.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +72,13 @@ public class CTSP extends javax.swing.JFrame {
             }
         });
 
+        lbTensp.setText("Tên SP:");
+
         lbNgaynhap.setText("Ngày nhập:");
+
+        lbMaCTSP.setText("Mã CTSP:");
+
+        lbSoluongSP.setText("Số lượng SP:");
 
         tblCTSP.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -79,24 +93,8 @@ public class CTSP extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblCTSP);
 
-        lbChitietsanpham.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lbChitietsanpham.setForeground(new java.awt.Color(0, 0, 255));
-        lbChitietsanpham.setText("Chi Tiết Sản Phẩm");
-
-        btnLammoi.setText("LÀM MỚI");
-
-        lbMasp.setText("Mã SP:");
-
-        btnThem.setText("THÊM");
-
-        lbTensp.setText("Tên SP:");
-
-        lbMaCTSP.setText("Mã CTSP:");
-
-        lbSoluongSP.setText("Số lượng SP:");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -112,7 +110,7 @@ public class CTSP extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(lbSoluongSP)))
-                        .addGap(0, 26, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtSoluongSP, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -171,7 +169,7 @@ public class CTSP extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbMaCTSP)
                     .addComponent(txtMaCTSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtSoluongSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbSoluongSP))
@@ -179,8 +177,6 @@ public class CTSP extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuaActionPerformed
@@ -191,40 +187,6 @@ public class CTSP extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnXoaActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CTSP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CTSP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CTSP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CTSP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CTSP().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLammoi;

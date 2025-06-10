@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package view;
 
@@ -8,7 +8,7 @@ package view;
  *
  * @author ADMIN
  */
-public class XCT extends javax.swing.JFrame {
+public class XCT extends javax.swing.JPanel {
 
     /**
      * Creates new form XCT
@@ -26,67 +26,22 @@ public class XCT extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnChuongtrinhkhuyenmai = new javax.swing.JButton();
-        btnQuanlysanpham = new javax.swing.JButton();
-        btnChitietsanpham = new javax.swing.JButton();
-        lbXCT = new javax.swing.JLabel();
-        btnQuanlynhanvien = new javax.swing.JButton();
-        btnQuanlyhoadonchitiet = new javax.swing.JButton();
-        btnQuanlyhoadon = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
         pnAokhoac = new javax.swing.JPanel();
         lbAokhoac = new javax.swing.JLabel();
-        lbMaSP = new javax.swing.JLabel();
-        lbTenSP = new javax.swing.JLabel();
-        lbGiatien = new javax.swing.JLabel();
-        txtMaSP = new javax.swing.JTextField();
-        txtTenSP = new javax.swing.JTextField();
+        btnBack = new javax.swing.JButton();
+        btnQuanlyhoadon = new javax.swing.JButton();
+        btnQuanlyhoadonchitiet = new javax.swing.JButton();
+        btnQuanlynhanvien = new javax.swing.JButton();
         txtGiatien = new javax.swing.JTextField();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        btnChuongtrinhkhuyenmai.setText("Chương trình khuyến mãi");
-        btnChuongtrinhkhuyenmai.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnChuongtrinhkhuyenmaiActionPerformed(evt);
-            }
-        });
-
-        btnQuanlysanpham.setText("Quản Lý Sản Phẩm");
-
-        btnChitietsanpham.setText("Chi tiết sản phẩm");
-        btnChitietsanpham.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnChitietsanphamActionPerformed(evt);
-            }
-        });
-
-        lbXCT.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lbXCT.setForeground(new java.awt.Color(0, 0, 255));
-        lbXCT.setText("Quản Lý Quần Áo");
-
-        btnQuanlynhanvien.setText("Quản Lý Nhân Viên");
-
-        btnQuanlyhoadonchitiet.setText("Quản lý hóa đơn chi tiết");
-        btnQuanlyhoadonchitiet.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQuanlyhoadonchitietActionPerformed(evt);
-            }
-        });
-
-        btnQuanlyhoadon.setText("Quản lý hóa đơn");
-        btnQuanlyhoadon.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQuanlyhoadonActionPerformed(evt);
-            }
-        });
-
-        btnBack.setText("BACK");
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
-            }
-        });
+        lbXCT = new javax.swing.JLabel();
+        txtTenSP = new javax.swing.JTextField();
+        btnChitietsanpham = new javax.swing.JButton();
+        txtMaSP = new javax.swing.JTextField();
+        btnQuanlysanpham = new javax.swing.JButton();
+        lbGiatien = new javax.swing.JLabel();
+        btnChuongtrinhkhuyenmai = new javax.swing.JButton();
+        lbTenSP = new javax.swing.JLabel();
+        lbMaSP = new javax.swing.JLabel();
 
         pnAokhoac.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -110,14 +65,57 @@ public class XCT extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        lbMaSP.setText("Mã SP:");
+        btnBack.setText("BACK");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
 
-        lbTenSP.setText("Tên SP:");
+        btnQuanlyhoadon.setText("Quản lý hóa đơn");
+        btnQuanlyhoadon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnQuanlyhoadonActionPerformed(evt);
+            }
+        });
+
+        btnQuanlyhoadonchitiet.setText("Quản lý hóa đơn chi tiết");
+        btnQuanlyhoadonchitiet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnQuanlyhoadonchitietActionPerformed(evt);
+            }
+        });
+
+        btnQuanlynhanvien.setText("Quản Lý Nhân Viên");
+
+        lbXCT.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lbXCT.setForeground(new java.awt.Color(0, 0, 255));
+        lbXCT.setText("Quản Lý Quần Áo");
+
+        btnChitietsanpham.setText("Chi tiết sản phẩm");
+        btnChitietsanpham.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnChitietsanphamActionPerformed(evt);
+            }
+        });
+
+        btnQuanlysanpham.setText("Quản Lý Sản Phẩm");
 
         lbGiatien.setText("Giá tiền:");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        btnChuongtrinhkhuyenmai.setText("Chương trình khuyến mãi");
+        btnChuongtrinhkhuyenmai.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnChuongtrinhkhuyenmaiActionPerformed(evt);
+            }
+        });
+
+        lbTenSP.setText("Tên SP:");
+
+        lbMaSP.setText("Mã SP:");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -150,7 +148,7 @@ public class XCT extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(316, 316, 316)
                         .addComponent(lbXCT)))
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,66 +192,30 @@ public class XCT extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addComponent(pnAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnChuongtrinhkhuyenmaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChuongtrinhkhuyenmaiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnChuongtrinhkhuyenmaiActionPerformed
-
-    private void btnChitietsanphamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChitietsanphamActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnChitietsanphamActionPerformed
-
-    private void btnQuanlyhoadonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyhoadonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnQuanlyhoadonActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
 
+    private void btnQuanlyhoadonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyhoadonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnQuanlyhoadonActionPerformed
+
     private void btnQuanlyhoadonchitietActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyhoadonchitietActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnQuanlyhoadonchitietActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(XCT.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(XCT.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(XCT.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(XCT.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void btnChitietsanphamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChitietsanphamActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnChitietsanphamActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new XCT().setVisible(true);
-            }
-        });
-    }
+    private void btnChuongtrinhkhuyenmaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChuongtrinhkhuyenmaiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnChuongtrinhkhuyenmaiActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;

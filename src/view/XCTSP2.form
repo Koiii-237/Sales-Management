@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
-  </Properties>
-  <SyntheticProperties>
-    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
-  </SyntheticProperties>
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -31,7 +24,7 @@
                           <Component id="btnChuongtrinhkhuyenmai" alignment="0" max="32767" attributes="0"/>
                           <Component id="btnQuanlynhanvien" alignment="0" max="32767" attributes="0"/>
                           <Component id="btnQuanlyhoadonchitiet" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnQuanlyhoadon" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnQuanlyhoadon1" alignment="0" max="32767" attributes="0"/>
                           <Component id="btnQuanlysanpham" alignment="0" max="32767" attributes="0"/>
                           <Component id="btnChitietsanpham" alignment="1" max="32767" attributes="0"/>
                       </Group>
@@ -83,7 +76,7 @@
                               <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
                               <Component id="btnQuanlysanpham" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
-                              <Component id="btnQuanlyhoadon" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnQuanlyhoadon1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
@@ -124,11 +117,13 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="txtMaSP">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtTenSP">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtGiatien">
+    <Component class="javax.swing.JButton" name="btnQuanlyhoadon1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n l&#xfd; h&#xf3;a &#x111;&#x1a1;n"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuanlyhoadon1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnBack">
       <Properties>
@@ -136,14 +131,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnQuanlyhoadonchitiet">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n l&#xfd; h&#xf3;a &#x111;&#x1a1;n chi ti&#x1ebf;t"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuanlyhoadonchitietActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JPanel" name="pnAoni">
@@ -186,6 +173,16 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="lbMaSP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M&#xe3; SP:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbTenSP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="T&#xea;n SP:"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JButton" name="btnChuongtrinhkhuyenmai">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ch&#x1b0;&#x1a1;ng tr&#xec;nh khuy&#x1ebf;n m&#xe3;i"/>
@@ -194,17 +191,9 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnChuongtrinhkhuyenmaiActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnQuanlyhoadon">
+    <Component class="javax.swing.JLabel" name="lbGiatien">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n l&#xfd; h&#xf3;a &#x111;&#x1a1;n"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuanlyhoadonActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbMaSP">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="M&#xe3; SP:"/>
+        <Property name="text" type="java.lang.String" value="Gi&#xe1; ti&#x1ec1;n:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnQuanlysanpham">
@@ -212,10 +201,7 @@
         <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; S&#x1ea3;n Ph&#x1ea9;m"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbTenSP">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="T&#xea;n SP:"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="txtMaSP">
     </Component>
     <Component class="javax.swing.JButton" name="btnChitietsanpham">
       <Properties>
@@ -225,10 +211,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnChitietsanphamActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbGiatien">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Gi&#xe1; ti&#x1ec1;n:"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="txtTenSP">
     </Component>
     <Component class="javax.swing.JLabel" name="lbXCTSP2">
       <Properties>
@@ -241,10 +224,20 @@
         <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; Qu&#x1ea7;n &#xc1;o"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JTextField" name="txtGiatien">
+    </Component>
     <Component class="javax.swing.JButton" name="btnQuanlynhanvien">
       <Properties>
         <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; Nh&#xe2;n Vi&#xea;n"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnQuanlyhoadonchitiet">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n l&#xfd; h&#xf3;a &#x111;&#x1a1;n chi ti&#x1ebf;t"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuanlyhoadonchitietActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

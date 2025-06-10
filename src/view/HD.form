@@ -33,7 +33,6 @@
                           <Component id="lbTenSP" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="lbDongia" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="lbNgaynhap" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbSoluong" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -45,7 +44,6 @@
                                   <Component id="txtTrangthai" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
                                   <Component id="txtDongia" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
                                   <Component id="txtThoigianthanhtoan" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
-                                  <Component id="txtSoluong" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
                                   <Component id="txtMaHD" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="49" pref="49" max="-2" attributes="0"/>
@@ -60,6 +58,13 @@
                               <Component id="btnXoa" max="32767" attributes="0"/>
                           </Group>
                       </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lbSoluong" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="txtSoluong" min="-2" pref="254" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -131,12 +136,12 @@
                   <Component id="lbNgaynhap" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtThoigianthanhtoan" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="22" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txtSoluong" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lbSoluong" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
           </Group>
@@ -144,6 +149,53 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
+    <Component class="javax.swing.JTextField" name="txtMaHD">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbSoluong">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="S&#x1ed1; l&#x1b0;&#x1ee3;ng:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTenSP">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnXoa">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="X&#xd3;A"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnXoaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbMaSP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="M&#xe3; SP:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMaSP">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMaSPActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbDongia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x110;&#x1a1;n gi&#xe1;:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbTenSP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="T&#xea;n SP:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnLammoi">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="L&#xc0;M M&#x1eda;I"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbNgaynhap">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Th&#x1edd;i gian thanh to&#xe1;n:"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JButton" name="btnSua2">
       <Properties>
         <Property name="text" type="java.lang.String" value="S&#x1eec;A"/>
@@ -152,22 +204,23 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSua2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDongia">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtTrangthai">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTrangthaiActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbMaSP">
+    <Component class="javax.swing.JButton" name="btnThem">
       <Properties>
-        <Property name="text" type="java.lang.String" value="M&#xe3; SP:"/>
+        <Property name="text" type="java.lang.String" value="TH&#xca;M"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbTrangthai">
+    <Component class="javax.swing.JLabel" name="lbQuanlyHD">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Tr&#x1ea1;ng th&#xe1;i:"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="H&#xd3;A &#x110;&#x1a0;N"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMaNV">
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
       <AuxValues>
@@ -190,82 +243,34 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="lbNgaynhap">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Th&#x1edd;i gian thanh to&#xe1;n:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnXoa">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="X&#xd3;A"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnXoaActionPerformed"/>
-      </Events>
+    <Component class="javax.swing.JTextField" name="txtThoigianthanhtoan">
     </Component>
     <Component class="javax.swing.JTextField" name="txtSoluong">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSoluongActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbMaHD">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="M&#xe3; HD:"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="lbMaNV">
       <Properties>
         <Property name="text" type="java.lang.String" value="M&#xe3; NV:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtMaNV">
+    <Component class="javax.swing.JLabel" name="lbTrangthai">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tr&#x1ea1;ng th&#xe1;i:"/>
+      </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtMaSP">
+    <Component class="javax.swing.JTextField" name="txtDongia">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTrangthai">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMaSPActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTrangthaiActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbSoluong">
+    <Component class="javax.swing.JLabel" name="lbMaHD">
       <Properties>
-        <Property name="text" type="java.lang.String" value="S&#x1ed1; l&#x1b0;&#x1ee3;ng:"/>
+        <Property name="text" type="java.lang.String" value="M&#xe3; HD:"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnLammoi">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="L&#xc0;M M&#x1eda;I"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnThem">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="TH&#xca;M"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtTenSP">
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbQuanlyHD">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="24" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="0" red="0" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="H&#xd3;A &#x110;&#x1a0;N"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbDongia">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="&#x110;&#x1a1;n gi&#xe1;:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbTenSP">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="T&#xea;n SP:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtMaHD">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtThoigianthanhtoan">
     </Component>
   </SubComponents>
 </Form>
