@@ -11,12 +11,12 @@ package model;
 public class User {
     private String userName;
     private String passWord;
-    private String role;
+    private int role;
 
     public User() {
     }
 
-    public User(String userName, String passWord, String role) {
+    public User(String userName, String passWord, int role) {
         this.userName = userName;
         this.passWord = passWord;
         this.role = role;
@@ -38,11 +38,11 @@ public class User {
         this.passWord = passWord;
     }
 
-    public String getRole() {
+    public int getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(int role) {
         this.role = role;
     }
     
