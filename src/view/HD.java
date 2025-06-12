@@ -9,14 +9,13 @@ package view;
  * @author ADMIN
  */
 public class HD extends javax.swing.JPanel {
-
+    
     /**
      * Creates new form HD
      */
     public HD() {
         initComponents();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
