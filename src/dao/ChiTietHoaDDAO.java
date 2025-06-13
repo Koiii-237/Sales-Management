@@ -17,7 +17,6 @@ import java.sql.ResultSet;
  * @author ADMIN
  */
 public class ChiTietHoaDDAO {
-    public class HoaDonDAO {
     public Object[] getRow(ChiTietHoaDon cthd) {
         String maCTHD = cthd.getMaCTHD();
         String maHD = cthd.getMaHD();
@@ -29,7 +28,7 @@ public class ChiTietHoaDDAO {
 
         return new Object[]{maCTHD, maHD, maKM, maCTSP, tenSP, donGia, trangThai};
     }
-    }
+    
     public List<ChiTietHoaDon> getALL() {
         List<ChiTietHoaDon> listCTHD = new ArrayList<>();
         String sql = "SELECT * FROM CHITIETHOADON";
