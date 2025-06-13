@@ -86,7 +86,7 @@ public class QuanLySPDAO {
         }
     }
     public boolean delete(String maSP) {
-        String sql = "DELETE FROM HOADON WHERE maHD=?";
+        String sql = "DELETE FROM HOADON WHERE maSP=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
