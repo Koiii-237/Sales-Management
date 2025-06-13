@@ -130,7 +130,7 @@ public class NV extends javax.swing.JFrame {
                 .addComponent(btnCTKM, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
-                .addGap(25, 25, 25))
+                .addGap(45, 45, 45))
         );
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -142,7 +142,7 @@ public class NV extends javax.swing.JFrame {
 
         lbAococ1.setText("Áo cộc");
 
-        lbAococ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh4.png"))); // NOI18N
+        lbAococ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh4.png"))); // NOI18N
         lbAococ.setText("jLabel3");
 
         javax.swing.GroupLayout pnAococLayout = new javax.swing.GroupLayout(pnAococ);
@@ -179,7 +179,7 @@ public class NV extends javax.swing.JFrame {
 
         lbAoni1.setText("Áo nỉ");
 
-        lbAoni.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh2.png"))); // NOI18N
+        lbAoni.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh2.png"))); // NOI18N
         lbAoni.setText("jLabel3");
 
         btnAoni.setText("Xem chi tiết");
@@ -228,7 +228,7 @@ public class NV extends javax.swing.JFrame {
 
         lbAosomi1.setText("Áo sơ mi");
 
-        lbAosomi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh3.png"))); // NOI18N
+        lbAosomi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh3.png"))); // NOI18N
         lbAosomi.setText("jLabel3");
 
         javax.swing.GroupLayout pnAosomiLayout = new javax.swing.GroupLayout(pnAosomi);
@@ -266,7 +266,7 @@ public class NV extends javax.swing.JFrame {
 
         lbAokhoac1.setText("Áo khoác");
 
-        lbAokhoac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh1.png"))); // NOI18N
+        lbAokhoac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh1.png"))); // NOI18N
         lbAokhoac.setText("jLabel3");
 
         javax.swing.GroupLayout pnAokhoacLayout = new javax.swing.GroupLayout(pnAokhoac);
@@ -279,18 +279,19 @@ public class NV extends javax.swing.JFrame {
                         .addGap(97, 97, 97)
                         .addComponent(lbAokhoac1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnAokhoacLayout.createSequentialGroup()
-                        .addGap(77, 77, 77)
-                        .addComponent(btnAokhoac))
+                        .addGap(15, 15, 15)
+                        .addComponent(lbAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnAokhoacLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addGap(77, 77, 77)
+                        .addComponent(btnAokhoac)))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
         pnAokhoacLayout.setVerticalGroup(
             pnAokhoacLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnAokhoacLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(lbAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
+                .addGap(18, 18, 18)
                 .addComponent(lbAokhoac1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnAokhoac)
@@ -311,7 +312,7 @@ public class NV extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(pnAosomi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(pnAokhoac, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(36, 36, 36)
+                                .addGap(47, 47, 47)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(pnAoni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(pnAococ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))

@@ -68,7 +68,7 @@ public class ADMIN extends javax.swing.JFrame {
 
         lbAosomi1.setText("Áo sơ mi");
 
-        lbAosomi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh3.png"))); // NOI18N
+        lbAosomi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh3.png"))); // NOI18N
         lbAosomi.setText("jLabel3");
 
         javax.swing.GroupLayout pnAosomiLayout = new javax.swing.GroupLayout(pnAosomi);
@@ -109,7 +109,7 @@ public class ADMIN extends javax.swing.JFrame {
 
         lbAococ1.setText("Áo cộc");
 
-        lbAococ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh4.png"))); // NOI18N
+        lbAococ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh4.png"))); // NOI18N
         lbAococ.setText("jLabel3");
 
         javax.swing.GroupLayout pnAococLayout = new javax.swing.GroupLayout(pnAococ);
@@ -214,7 +214,7 @@ public class ADMIN extends javax.swing.JFrame {
                 .addComponent(btnCTKM, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
-                .addGap(26, 26, 26))
+                .addGap(67, 67, 67))
         );
 
         pnAokhoac.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -223,7 +223,7 @@ public class ADMIN extends javax.swing.JFrame {
 
         lbAokhoac1.setText("Áo khoác");
 
-        lbAokhoac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh1.png"))); // NOI18N
+        lbAokhoac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh1.png"))); // NOI18N
         lbAokhoac.setText("jLabel3");
 
         javax.swing.GroupLayout pnAokhoacLayout = new javax.swing.GroupLayout(pnAokhoac);
@@ -259,7 +259,7 @@ public class ADMIN extends javax.swing.JFrame {
 
         lbAoni1.setText("Áo nỉ");
 
-        lbAoni.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh2.png"))); // NOI18N
+        lbAoni.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mages/Anh2.png"))); // NOI18N
         lbAoni.setText("jLabel3");
 
         btnAoni.setText("Xem chi tiết");
