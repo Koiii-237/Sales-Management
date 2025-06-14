@@ -9,7 +9,6 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import model.NhanVien;
 import model.User;
 import javax.swing.JFrame;
 
@@ -199,7 +198,7 @@ public class Login extends javax.swing.JFrame {
     private void btnDangnhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDangnhapActionPerformed
         // TODO add your handling code here:
         String username = txtTendangnhap.getText().trim();
-        String password = new String(txtPass.getPassword()).trim();
+        String password = String.valueOf(txtPass.getPassword()).trim();
         int resultCheckAccount = CheckAccount(username, password);
         int resultCheckLogin = CheckLogin(username, password);
         if (resultCheckLogin == 0) {

@@ -20,19 +20,8 @@ public class ADMIN extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         initComponents();
         setTitle("ADMIN");
-        setSize(1200, 1000);
     }
-    
-    
-//    CTSP productDetail = new CTSP();
-    
-//    HD bill = new HD();
-//    CTHD billDetail = new CTHD();
-//    CTKM sales = new CTKM();
-//    XCT seeDetail = new XCT();
-//    XCTSP2 seeDatail2 = new XCTSP2();
-//    XCTSP3 seeDetail3 = new XCTSP3();
-//    XCTSP4 seeDetail4 = new XCTSP4();
+       
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -43,16 +32,6 @@ public class ADMIN extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbMenu = new javax.swing.JLabel();
-        pnAosomi = new javax.swing.JPanel();
-        btnAosomi = new javax.swing.JButton();
-        lbAosomi1 = new javax.swing.JLabel();
-        lbAosomi = new javax.swing.JLabel();
-        lbAdmin = new javax.swing.JLabel();
-        pnAococ = new javax.swing.JPanel();
-        btnAococ = new javax.swing.JButton();
-        lbAococ1 = new javax.swing.JLabel();
-        lbAococ = new javax.swing.JLabel();
         pnSideBar = new javax.swing.JPanel();
         btnQuanlyCTSP = new javax.swing.JButton();
         btnQuanlyHDCT = new javax.swing.JButton();
@@ -61,110 +40,27 @@ public class ADMIN extends javax.swing.JFrame {
         btnLogOut = new javax.swing.JButton();
         btnQLHD = new javax.swing.JButton();
         btnCTKM = new javax.swing.JButton();
+        pnChangee = new javax.swing.JPanel();
         pnAokhoac = new javax.swing.JPanel();
         btnAokhoac = new javax.swing.JButton();
         lbAokhoac1 = new javax.swing.JLabel();
         lbAokhoac = new javax.swing.JLabel();
+        pnAosomi = new javax.swing.JPanel();
+        btnAosomi = new javax.swing.JButton();
+        lbAosomi1 = new javax.swing.JLabel();
+        lbAosomi = new javax.swing.JLabel();
+        pnAococ = new javax.swing.JPanel();
+        btnAococ = new javax.swing.JButton();
+        lbAococ1 = new javax.swing.JLabel();
+        lbAococ = new javax.swing.JLabel();
         pnAoni = new javax.swing.JPanel();
         lbAoni1 = new javax.swing.JLabel();
         lbAoni = new javax.swing.JLabel();
         btnAoni = new javax.swing.JButton();
+        lbAdmin = new javax.swing.JLabel();
+        lbMenu = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        lbMenu.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lbMenu.setForeground(new java.awt.Color(0, 0, 255));
-        lbMenu.setText("MENU");
-
-        pnAosomi.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        btnAosomi.setText("Xem chi tiết");
-        btnAosomi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAosomiActionPerformed(evt);
-            }
-        });
-
-        lbAosomi1.setText("Áo sơ mi");
-
-        lbAosomi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh3.png"))); // NOI18N
-        lbAosomi.setText("jLabel3");
-
-        javax.swing.GroupLayout pnAosomiLayout = new javax.swing.GroupLayout(pnAosomi);
-        pnAosomi.setLayout(pnAosomiLayout);
-        pnAosomiLayout.setHorizontalGroup(
-            pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAosomiLayout.createSequentialGroup()
-                .addGroup(pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAosomiLayout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(lbAosomi1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnAosomiLayout.createSequentialGroup()
-                        .addGap(77, 77, 77)
-                        .addComponent(btnAosomi))
-                    .addGroup(pnAosomiLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        pnAosomiLayout.setVerticalGroup(
-            pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAosomiLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lbAosomi1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnAosomi)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        lbAdmin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lbAdmin.setText("ADMIN");
-
-        pnAococ.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        btnAococ.setText("Xem chi tiết");
-        btnAococ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAococActionPerformed(evt);
-            }
-        });
-
-        lbAococ1.setText("Áo cộc");
-
-        lbAococ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh4.png"))); // NOI18N
-        lbAococ.setText("jLabel3");
-
-        javax.swing.GroupLayout pnAococLayout = new javax.swing.GroupLayout(pnAococ);
-        pnAococ.setLayout(pnAococLayout);
-        pnAococLayout.setHorizontalGroup(
-            pnAococLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAococLayout.createSequentialGroup()
-                .addGroup(pnAococLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAococLayout.createSequentialGroup()
-                        .addGap(77, 77, 77)
-                        .addComponent(btnAococ))
-                    .addGroup(pnAococLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbAococ, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(12, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAococLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lbAococ1)
-                .addGap(94, 94, 94))
-        );
-        pnAococLayout.setVerticalGroup(
-            pnAococLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAococLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbAococ, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lbAococ1)
-                .addGap(12, 12, 12)
-                .addComponent(btnAococ)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
 
         pnSideBar.setBackground(new java.awt.Color(153, 153, 255));
         pnSideBar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -263,8 +159,11 @@ public class ADMIN extends javax.swing.JFrame {
                 .addComponent(btnCTKM, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
-                .addGap(67, 67, 67))
+                .addGap(184, 184, 184))
         );
+
+        pnChangee.setBackground(new java.awt.Color(102, 102, 102));
+        pnChangee.setForeground(java.awt.Color.red);
 
         pnAokhoac.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -309,6 +208,92 @@ public class ADMIN extends javax.swing.JFrame {
                 .addContainerGap(38, Short.MAX_VALUE))
         );
 
+        pnAosomi.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnAosomi.setText("Xem chi tiết");
+        btnAosomi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAosomiActionPerformed(evt);
+            }
+        });
+
+        lbAosomi1.setText("Áo sơ mi");
+
+        lbAosomi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh3.png"))); // NOI18N
+        lbAosomi.setText("jLabel3");
+
+        javax.swing.GroupLayout pnAosomiLayout = new javax.swing.GroupLayout(pnAosomi);
+        pnAosomi.setLayout(pnAosomiLayout);
+        pnAosomiLayout.setHorizontalGroup(
+            pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnAosomiLayout.createSequentialGroup()
+                .addGroup(pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnAosomiLayout.createSequentialGroup()
+                        .addGap(97, 97, 97)
+                        .addComponent(lbAosomi1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnAosomiLayout.createSequentialGroup()
+                        .addGap(77, 77, 77)
+                        .addComponent(btnAosomi))
+                    .addGroup(pnAosomiLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(lbAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        pnAosomiLayout.setVerticalGroup(
+            pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnAosomiLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lbAosomi1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnAosomi)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pnAococ.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnAococ.setText("Xem chi tiết");
+        btnAococ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAococActionPerformed(evt);
+            }
+        });
+
+        lbAococ1.setText("Áo cộc");
+
+        lbAococ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh4.png"))); // NOI18N
+        lbAococ.setText("jLabel3");
+
+        javax.swing.GroupLayout pnAococLayout = new javax.swing.GroupLayout(pnAococ);
+        pnAococ.setLayout(pnAococLayout);
+        pnAococLayout.setHorizontalGroup(
+            pnAococLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAococLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbAococ1)
+                .addGap(94, 94, 94))
+            .addGroup(pnAococLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(btnAococ)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAococLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbAococ, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+        );
+        pnAococLayout.setVerticalGroup(
+            pnAococLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnAococLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbAococ, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(lbAococ1)
+                .addGap(12, 12, 12)
+                .addComponent(btnAococ)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         pnAoni.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lbAoni1.setText("Áo nỉ");
@@ -330,27 +315,63 @@ public class ADMIN extends javax.swing.JFrame {
             .addGroup(pnAoniLayout.createSequentialGroup()
                 .addGroup(pnAoniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnAoniLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbAoni, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnAoniLayout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addComponent(lbAoni1))
                     .addGroup(pnAoniLayout.createSequentialGroup()
                         .addGap(71, 71, 71)
-                        .addComponent(btnAoni)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btnAoni))
+                    .addGroup(pnAoniLayout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(lbAoni, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         pnAoniLayout.setVerticalGroup(
             pnAoniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnAoniLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addComponent(lbAoni, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbAoni1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnAoni)
+                .addContainerGap(44, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout pnChangeeLayout = new javax.swing.GroupLayout(pnChangee);
+        pnChangee.setLayout(pnChangeeLayout);
+        pnChangeeLayout.setHorizontalGroup(
+            pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnChangeeLayout.createSequentialGroup()
+                .addGap(248, 248, 248)
+                .addGroup(pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(238, 238, 238)
+                .addGroup(pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnAococ, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnAoni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+        pnChangeeLayout.setVerticalGroup(
+            pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnChangeeLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnAoni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnAococ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+
+        lbAdmin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbAdmin.setText("ADMIN");
+
+        lbMenu.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lbMenu.setForeground(new java.awt.Color(0, 0, 255));
+        lbMenu.setText("MENU");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -360,41 +381,25 @@ public class ADMIN extends javax.swing.JFrame {
                 .addComponent(pnSideBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 646, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(pnAokhoac, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(pnAosomi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(66, 66, 66)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(pnAoni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(pnAococ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(256, 256, 256)
-                                .addComponent(lbMenu))))
+                            .addComponent(lbMenu)
+                            .addComponent(lbAdmin))
+                        .addGap(606, 606, 606))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(lbAdmin)))
-                .addContainerGap(114, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pnChangee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnSideBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lbAdmin)
                 .addGap(18, 18, 18)
                 .addComponent(lbMenu)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pnAoni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(pnAococ, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(pnAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnChangee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -403,22 +408,38 @@ public class ADMIN extends javax.swing.JFrame {
     private void btnQuanlySPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlySPActionPerformed
         // TODO add your handling code here: 
         QLSP productManagement = new QLSP();
-        productManagement.setSize(987, 583);
+        productManagement.setSize(1300, 800);
         productManagement.setLocation(0,0);
         
-        pnSideBar.removeAll();
-        pnSideBar.add(productManagement, BorderLayout.CENTER);
-        pnSideBar.repaint();
-        pnSideBar.revalidate();
+        pnChangee.removeAll();
+        pnChangee.add(productManagement, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnQuanlySPActionPerformed
 
     private void btnAoniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAoniActionPerformed
         // TODO add your handling code here:
-
+        XCTSP2 seeDatail2 = new XCTSP2();
+        seeDatail2.setSize(1300, 800);
+        seeDatail2.setLocation(0,0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(seeDatail2, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
+        
     }//GEN-LAST:event_btnAoniActionPerformed
 
     private void btnQuanlyCTSPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyCTSPActionPerformed
         // TODO add your handling code here:
+        CTSP productDetail = new CTSP();
+        productDetail.setSize(1300, 800);
+        productDetail.setLocation(0, 0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(productDetail, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnQuanlyCTSPActionPerformed
 
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
@@ -431,26 +452,74 @@ public class ADMIN extends javax.swing.JFrame {
 
     private void btnQLHDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQLHDActionPerformed
         // TODO add your handling code here:
+        HD bill = new HD();
+        bill.setSize(1300,  800);
+        bill.setLocation(0, 0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(bill, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnQLHDActionPerformed
 
     private void btnQuanlyHDCTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyHDCTActionPerformed
         // TODO add your handling code here:
+        CTHD billDetail = new CTHD();
+        billDetail.setSize(1300, 800);
+        billDetail.setLocation(0, 0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(billDetail, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnQuanlyHDCTActionPerformed
 
     private void btnCTKMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCTKMActionPerformed
         // TODO add your handling code here:
+        CTKM sales = new CTKM();
+        sales.setSize(1300, 800);
+        sales.setLocation(0, 0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(sales, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnCTKMActionPerformed
 
     private void btnAokhoacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAokhoacActionPerformed
         // TODO add your handling code here:
+        XCT seeDetail = new XCT();
+        seeDetail.setSize(1300, 800);
+        seeDetail.setLocation(0, 0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(seeDetail, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnAokhoacActionPerformed
 
     private void btnAosomiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAosomiActionPerformed
         // TODO add your handling code here:
+        XCTSP3 seeDetail3 = new XCTSP3();
+        seeDetail3.setSize(1300, 800);
+        seeDetail3.setLocation(0, 0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(seeDetail3, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnAosomiActionPerformed
 
     private void btnAococActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAococActionPerformed
         // TODO add your handling code here:
+        XCTSP4 seeDetail4 = new XCTSP4();
+        seeDetail4.setSize(1300, 800);
+        seeDetail4.setLocation(0, 0);
+        
+        pnChangee.removeAll();
+        pnChangee.add(seeDetail4, BorderLayout.CENTER);
+        pnChangee.repaint();
+        pnChangee.revalidate();
     }//GEN-LAST:event_btnAococActionPerformed
 
     /**
@@ -514,6 +583,7 @@ public class ADMIN extends javax.swing.JFrame {
     private javax.swing.JPanel pnAokhoac;
     private javax.swing.JPanel pnAoni;
     private javax.swing.JPanel pnAosomi;
+    private javax.swing.JPanel pnChangee;
     private javax.swing.JPanel pnSideBar;
     // End of variables declaration//GEN-END:variables
 }

@@ -26,29 +26,16 @@ public class XCTSP2 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnQuanlyhoadon1 = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
         pnAoni = new javax.swing.JPanel();
         lbAoni = new javax.swing.JLabel();
         lbMaSP = new javax.swing.JLabel();
         lbTenSP = new javax.swing.JLabel();
-        btnChuongtrinhkhuyenmai = new javax.swing.JButton();
         lbGiatien = new javax.swing.JLabel();
-        btnQuanlysanpham = new javax.swing.JButton();
         txtMaSP = new javax.swing.JTextField();
-        btnChitietsanpham = new javax.swing.JButton();
         txtTenSP = new javax.swing.JTextField();
         lbXCTSP2 = new javax.swing.JLabel();
         txtGiatien = new javax.swing.JTextField();
-        btnQuanlynhanvien = new javax.swing.JButton();
-        btnQuanlyhoadonchitiet = new javax.swing.JButton();
-
-        btnQuanlyhoadon1.setText("Quản lý hóa đơn");
-        btnQuanlyhoadon1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQuanlyhoadon1ActionPerformed(evt);
-            }
-        });
 
         btnBack.setText("BACK");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -83,36 +70,11 @@ public class XCTSP2 extends javax.swing.JPanel {
 
         lbTenSP.setText("Tên SP:");
 
-        btnChuongtrinhkhuyenmai.setText("Chương trình khuyến mãi");
-        btnChuongtrinhkhuyenmai.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnChuongtrinhkhuyenmaiActionPerformed(evt);
-            }
-        });
-
         lbGiatien.setText("Giá tiền:");
-
-        btnQuanlysanpham.setText("Quản Lý Sản Phẩm");
-
-        btnChitietsanpham.setText("Chi tiết sản phẩm");
-        btnChitietsanpham.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnChitietsanphamActionPerformed(evt);
-            }
-        });
 
         lbXCTSP2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lbXCTSP2.setForeground(new java.awt.Color(0, 0, 255));
         lbXCTSP2.setText("Quản Lý Quần Áo");
-
-        btnQuanlynhanvien.setText("Quản Lý Nhân Viên");
-
-        btnQuanlyhoadonchitiet.setText("Quản lý hóa đơn chi tiết");
-        btnQuanlyhoadonchitiet.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQuanlyhoadonchitietActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -121,15 +83,7 @@ public class XCTSP2 extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnChuongtrinhkhuyenmai, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnQuanlynhanvien, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnQuanlyhoadonchitiet, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnQuanlyhoadon1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnQuanlysanpham, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnChitietsanpham, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(45, 45, 45)
+                        .addGap(291, 291, 291)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnBack)
                             .addGroup(layout.createSequentialGroup()
@@ -148,7 +102,7 @@ public class XCTSP2 extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(316, 316, 316)
                         .addComponent(lbXCTSP2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(186, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,76 +110,33 @@ public class XCTSP2 extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(lbXCTSP2)
                 .addGap(61, 61, 61)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnChitietsanpham)
-                    .addComponent(btnBack))
+                .addComponent(btnBack)
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(btnQuanlysanpham)
-                                .addGap(85, 85, 85)
-                                .addComponent(btnQuanlyhoadon1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addComponent(lbMaSP)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtMaSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31)
-                                .addComponent(lbTenSP)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtTenSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(36, 36, 36)
-                                .addComponent(lbGiatien)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(85, 85, 85)
-                                .addComponent(btnQuanlyhoadonchitiet)
-                                .addGap(86, 86, 86)
-                                .addComponent(btnQuanlynhanvien)
-                                .addGap(88, 88, 88)
-                                .addComponent(btnChuongtrinhkhuyenmai))
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtGiatien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(pnAoni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lbMaSP)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtMaSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(lbTenSP)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtTenSP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(lbGiatien)
+                        .addGap(4, 4, 4)
+                        .addComponent(txtGiatien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pnAoni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(210, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnQuanlyhoadon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyhoadon1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnQuanlyhoadon1ActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
 
-    private void btnChuongtrinhkhuyenmaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChuongtrinhkhuyenmaiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnChuongtrinhkhuyenmaiActionPerformed
-
-    private void btnChitietsanphamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChitietsanphamActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnChitietsanphamActionPerformed
-
-    private void btnQuanlyhoadonchitietActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyhoadonchitietActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnQuanlyhoadonchitietActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnChitietsanpham;
-    private javax.swing.JButton btnChuongtrinhkhuyenmai;
-    private javax.swing.JButton btnQuanlyhoadon;
-    private javax.swing.JButton btnQuanlyhoadon1;
-    private javax.swing.JButton btnQuanlyhoadonchitiet;
-    private javax.swing.JButton btnQuanlynhanvien;
-    private javax.swing.JButton btnQuanlysanpham;
     private javax.swing.JLabel lbAoni;
     private javax.swing.JLabel lbGiatien;
     private javax.swing.JLabel lbMaSP;
