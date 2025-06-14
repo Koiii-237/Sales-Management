@@ -412,6 +412,7 @@ public class NV extends javax.swing.JFrame {
     private void btnAokhoacActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         XCT seeDetail = new XCT();
+        seeDetail.setSize(1300, 800);
         seeDetail.setLocation(0, 0);
         
         pnChange.removeAll();

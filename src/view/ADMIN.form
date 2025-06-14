@@ -27,7 +27,7 @@
               <Component id="pnSideBar" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="646" max="32767" attributes="0"/>
+                      <EmptySpace pref="649" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="lbMenu" min="-2" max="-2" attributes="0"/>
                           <Component id="lbAdmin" min="-2" max="-2" attributes="0"/>
@@ -254,7 +254,7 @@
                       <Component id="pnAococ" min="-2" max="-2" attributes="0"/>
                       <Component id="pnAosomi" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <EmptySpace pref="68" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
