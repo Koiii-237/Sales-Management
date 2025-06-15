@@ -14,8 +14,6 @@ public class SalesManagement {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("gay");
-        System.out.println("ngu");
     }
     }
     

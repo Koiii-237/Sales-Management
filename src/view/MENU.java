@@ -4,6 +4,8 @@
  */
 package view;
 
+import java.awt.BorderLayout;
+
 /**
  *
  * @author ADMIN
@@ -31,23 +33,24 @@ public class MENU extends javax.swing.JPanel {
         lbAococ1 = new javax.swing.JLabel();
         lbAococ = new javax.swing.JLabel();
         lbMenu = new javax.swing.JLabel();
-        pnAokhoac = new javax.swing.JPanel();
-        btnAokhoac = new javax.swing.JButton();
-        lbAokhoac1 = new javax.swing.JLabel();
-        lbAokhoac = new javax.swing.JLabel();
-        pnAoni = new javax.swing.JPanel();
-        lbAoni1 = new javax.swing.JLabel();
-        lbAoni = new javax.swing.JLabel();
-        btnAoni = new javax.swing.JButton();
-        pnAosomi = new javax.swing.JPanel();
-        btnAosomi = new javax.swing.JButton();
-        lbAosomi1 = new javax.swing.JLabel();
-        lbAosomi = new javax.swing.JLabel();
-        pnAococ1 = new javax.swing.JPanel();
-        btnAococ1 = new javax.swing.JButton();
-        lbAococ2 = new javax.swing.JLabel();
-        lbAococ3 = new javax.swing.JLabel();
+        pnChange = new javax.swing.JPanel();
         lbMenu1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        btnSeeDetail2 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        btnSeeDetail1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        btnSeeDetail4 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        btnSeeDetail3 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
 
         pnAococ.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -96,271 +99,270 @@ public class MENU extends javax.swing.JPanel {
         lbMenu.setForeground(new java.awt.Color(0, 0, 255));
         lbMenu.setText("MENU");
 
-        pnAokhoac.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        btnAokhoac.setText("Xem chi tiết");
-        btnAokhoac.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAokhoacActionPerformed(evt);
-            }
-        });
-
-        lbAokhoac1.setText("Áo khoác");
-
-        lbAokhoac.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh1.png"))); // NOI18N
-        lbAokhoac.setText("jLabel3");
-
-        javax.swing.GroupLayout pnAokhoacLayout = new javax.swing.GroupLayout(pnAokhoac);
-        pnAokhoac.setLayout(pnAokhoacLayout);
-        pnAokhoacLayout.setHorizontalGroup(
-            pnAokhoacLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAokhoacLayout.createSequentialGroup()
-                .addGroup(pnAokhoacLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAokhoacLayout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(lbAokhoac1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnAokhoacLayout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(lbAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnAokhoacLayout.createSequentialGroup()
-                        .addGap(77, 77, 77)
-                        .addComponent(btnAokhoac)))
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
-        pnAokhoacLayout.setVerticalGroup(
-            pnAokhoacLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAokhoacLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lbAokhoac1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnAokhoac)
-                .addContainerGap(38, Short.MAX_VALUE))
-        );
-
-        pnAoni.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        lbAoni1.setText("Áo nỉ");
-
-        lbAoni.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh2.png"))); // NOI18N
-        lbAoni.setText("jLabel3");
-
-        btnAoni.setText("Xem chi tiết");
-        btnAoni.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAoniActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnAoniLayout = new javax.swing.GroupLayout(pnAoni);
-        pnAoni.setLayout(pnAoniLayout);
-        pnAoniLayout.setHorizontalGroup(
-            pnAoniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAoniLayout.createSequentialGroup()
-                .addGroup(pnAoniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAoniLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(lbAoni, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnAoniLayout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addComponent(lbAoni1))
-                    .addGroup(pnAoniLayout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(btnAoni)))
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-        pnAoniLayout.setVerticalGroup(
-            pnAoniLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAoniLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(lbAoni, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbAoni1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnAoni)
-                .addContainerGap(44, Short.MAX_VALUE))
-        );
-
-        pnAosomi.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        btnAosomi.setText("Xem chi tiết");
-        btnAosomi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAosomiActionPerformed(evt);
-            }
-        });
-
-        lbAosomi1.setText("Áo sơ mi");
-
-        lbAosomi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh3.png"))); // NOI18N
-        lbAosomi.setText("jLabel3");
-
-        javax.swing.GroupLayout pnAosomiLayout = new javax.swing.GroupLayout(pnAosomi);
-        pnAosomi.setLayout(pnAosomiLayout);
-        pnAosomiLayout.setHorizontalGroup(
-            pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAosomiLayout.createSequentialGroup()
-                .addGroup(pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAosomiLayout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addComponent(lbAosomi1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnAosomiLayout.createSequentialGroup()
-                        .addGap(77, 77, 77)
-                        .addComponent(btnAosomi))
-                    .addGroup(pnAosomiLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(lbAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
-        pnAosomiLayout.setVerticalGroup(
-            pnAosomiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAosomiLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lbAosomi1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnAosomi)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        pnAococ1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        btnAococ1.setText("Xem chi tiết");
-        btnAococ1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAococ1ActionPerformed(evt);
-            }
-        });
-
-        lbAococ2.setText("Áo cộc");
-
-        lbAococ3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh4.png"))); // NOI18N
-        lbAococ3.setText("jLabel3");
-
-        javax.swing.GroupLayout pnAococ1Layout = new javax.swing.GroupLayout(pnAococ1);
-        pnAococ1.setLayout(pnAococ1Layout);
-        pnAococ1Layout.setHorizontalGroup(
-            pnAococ1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnAococ1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lbAococ3, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
-            .addGroup(pnAococ1Layout.createSequentialGroup()
-                .addGroup(pnAococ1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnAococ1Layout.createSequentialGroup()
-                        .addGap(116, 116, 116)
-                        .addComponent(lbAococ2))
-                    .addGroup(pnAococ1Layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addComponent(btnAococ1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        pnAococ1Layout.setVerticalGroup(
-            pnAococ1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnAococ1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lbAococ3, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lbAococ2)
-                .addGap(12, 12, 12)
-                .addComponent(btnAococ1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        pnChange.setBackground(new java.awt.Color(102, 102, 102));
 
         lbMenu1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lbMenu1.setForeground(new java.awt.Color(0, 0, 255));
         lbMenu1.setText("MENU");
+
+        jLabel2.setText("Áo Nỉ");
+
+        btnSeeDetail2.setText("Xem Chi Tiết");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh2.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(85, 85, 85)
+                .addComponent(btnSeeDetail2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(146, 146, 146))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(45, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(20, 20, 20))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSeeDetail2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jLabel3.setText("Áo Khoác");
+
+        btnSeeDetail1.setText("Xem Chi Tiết");
+        btnSeeDetail1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSeeDetail1ActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh1.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(162, 162, 162)
+                .addComponent(jLabel3)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(btnSeeDetail1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabel4)))
+                .addGap(30, 50, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSeeDetail1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jLabel5.setText("Áo Cộc");
+
+        btnSeeDetail4.setText("Xem Chi Tiết");
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh4.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(162, 162, 162)
+                .addComponent(jLabel5)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(btnSeeDetail4, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabel6)))
+                .addGap(30, 50, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSeeDetail4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jLabel7.setText("Áo Sơ Mi");
+
+        btnSeeDetail3.setText("Xem Chi Tiết");
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anh3.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(162, 162, 162)
+                .addComponent(jLabel7)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(btnSeeDetail3, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabel8)))
+                .addGap(30, 50, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnSeeDetail3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout pnChangeLayout = new javax.swing.GroupLayout(pnChange);
+        pnChange.setLayout(pnChangeLayout);
+        pnChangeLayout.setHorizontalGroup(
+            pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnChangeLayout.createSequentialGroup()
+                .addContainerGap(367, Short.MAX_VALUE)
+                .addGroup(pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnChangeLayout.createSequentialGroup()
+                        .addGroup(pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(218, 218, 218)
+                        .addGroup(pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(95, 95, 95))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnChangeLayout.createSequentialGroup()
+                        .addComponent(lbMenu1)
+                        .addGap(580, 580, 580))))
+        );
+        pnChangeLayout.setVerticalGroup(
+            pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnChangeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbMenu1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnChangeLayout.createSequentialGroup()
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(69, 69, 69)
-                        .addComponent(pnAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(136, 136, 136))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbMenu1)
-                        .addGap(40, 40, 40)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(pnAococ1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnAoni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(79, 79, 79))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(71, 71, 71)
-                    .addComponent(pnAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(499, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnChange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(pnAoni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lbMenu1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnAosomi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnAococ1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(pnAokhoac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(338, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnChange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAokhoacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAokhoacActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAokhoacActionPerformed
-
-    private void btnAoniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAoniActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAoniActionPerformed
-
-    private void btnAosomiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAosomiActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAosomiActionPerformed
-
     private void btnAococActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAococActionPerformed
         // TODO add your handling code here:
+        XCTSP4 seeDetail4 = new XCTSP4();
+        seeDetail4.setSize(800, 600);
+        seeDetail4.setLocation(0, 0);
+        
+        pnChange.removeAll();
+        pnChange.add(seeDetail4, BorderLayout.CENTER);
+        pnChange.repaint();
+        pnChange.revalidate();
     }//GEN-LAST:event_btnAococActionPerformed
 
-    private void btnAococ1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAococ1ActionPerformed
-
-    }//GEN-LAST:event_btnAococ1ActionPerformed
+    private void btnSeeDetail1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeeDetail1ActionPerformed
+        // TODO add your handling code here:
+        XCT seeDetail = new XCT();
+        seeDetail.setSize(800, 600);
+        seeDetail.setLocation(0, 0);
+        
+        pnChange.removeAll();
+        pnChange.add(seeDetail, BorderLayout.CENTER);
+        pnChange.repaint();
+        pnChange.revalidate();
+    }//GEN-LAST:event_btnSeeDetail1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAococ;
-    private javax.swing.JButton btnAococ1;
-    private javax.swing.JButton btnAokhoac;
-    private javax.swing.JButton btnAoni;
     private javax.swing.JButton btnAosomi;
+    private javax.swing.JButton btnAosomi1;
+    private javax.swing.JButton btnSeeDetail1;
+    private javax.swing.JButton btnSeeDetail2;
+    private javax.swing.JButton btnSeeDetail3;
+    private javax.swing.JButton btnSeeDetail4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lbAococ;
     private javax.swing.JLabel lbAococ1;
-    private javax.swing.JLabel lbAococ2;
-    private javax.swing.JLabel lbAococ3;
-    private javax.swing.JLabel lbAokhoac;
-    private javax.swing.JLabel lbAokhoac1;
-    private javax.swing.JLabel lbAoni;
-    private javax.swing.JLabel lbAoni1;
     private javax.swing.JLabel lbAosomi;
     private javax.swing.JLabel lbAosomi1;
+    private javax.swing.JLabel lbAosomi2;
+    private javax.swing.JLabel lbAosomi3;
     private javax.swing.JLabel lbMenu;
     private javax.swing.JLabel lbMenu1;
     private javax.swing.JPanel pnAococ;
-    private javax.swing.JPanel pnAococ1;
-    private javax.swing.JPanel pnAokhoac;
-    private javax.swing.JPanel pnAoni;
     private javax.swing.JPanel pnAosomi;
+    private javax.swing.JPanel pnAosomi1;
+    private javax.swing.JPanel pnChange;
     // End of variables declaration//GEN-END:variables
 }

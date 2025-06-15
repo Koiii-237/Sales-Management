@@ -38,9 +38,10 @@ public class NV extends javax.swing.JFrame {
         lbCloShop = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
         btnQLHD = new javax.swing.JButton();
-        btnCTKM = new javax.swing.JButton();
+        btnMenu = new javax.swing.JButton();
         pnChange = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        btnCTKM1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,12 +98,12 @@ public class NV extends javax.swing.JFrame {
             }
         });
 
-        btnCTKM.setBackground(new java.awt.Color(0, 153, 153));
-        btnCTKM.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnCTKM.setText("Quản Lý Chương Trình Khuyến Mãi");
-        btnCTKM.addActionListener(new java.awt.event.ActionListener() {
+        btnMenu.setBackground(new java.awt.Color(0, 153, 153));
+        btnMenu.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnMenu.setText("MENU");
+        btnMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCTKMActionPerformed(evt);
+                btnMenuActionPerformed(evt);
             }
         });
 
@@ -112,7 +113,7 @@ public class NV extends javax.swing.JFrame {
         pnChange.setLayout(pnChangeLayout);
         pnChangeLayout.setHorizontalGroup(
             pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1055, Short.MAX_VALUE)
+            .addGap(0, 1325, Short.MAX_VALUE)
         );
         pnChangeLayout.setVerticalGroup(
             pnChangeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,6 +122,15 @@ public class NV extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("NHÂN VIÊN");
+
+        btnCTKM1.setBackground(new java.awt.Color(0, 153, 153));
+        btnCTKM1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnCTKM1.setText("Quản Lý Chương Trình Khuyến Mãi");
+        btnCTKM1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCTKM1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnSideBarLayout = new javax.swing.GroupLayout(pnSideBar);
         pnSideBar.setLayout(pnSideBarLayout);
@@ -136,8 +146,9 @@ public class NV extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnSideBarLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lbCloShop, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnCTKM, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnQLHD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnMenu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnQLHD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCTKM1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnChange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -159,15 +170,17 @@ public class NV extends javax.swing.JFrame {
                 .addComponent(btnQLHD, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnQuanlyHDCT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnCTKM, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 438, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(btnCTKM1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
+                .addComponent(btnMenu)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
                 .addGap(45, 45, 45))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnSideBarLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addComponent(pnChange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -187,17 +200,6 @@ public class NV extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-    private void btnAokhoacActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        XCT seeDetail = new XCT();
-        seeDetail.setSize(1300, 800);
-        seeDetail.setLocation(0, 0);
-        
-        pnChange.removeAll();
-        pnChange.add(seeDetail, BorderLayout.CENTER);
-        pnChange.repaint();
-        pnChange.revalidate();
-    }
     
     private void btnQuanlySPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlySPActionPerformed
         // TODO add your handling code here:
@@ -247,17 +249,17 @@ public class NV extends javax.swing.JFrame {
         pnChange.revalidate();
     }//GEN-LAST:event_btnQuanlyHDCTActionPerformed
 
-    private void btnCTKMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCTKMActionPerformed
+    private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
         // TODO add your handling code here:
-        CTKM sales = new CTKM();
-        sales.setSize(1300, 800);
-        sales.setLocation(0, 0);
+        MENU menu = new MENU();
+        menu.setSize(1300, 800);
+        menu.setLocation(0, 0);
         
         pnChange.removeAll();
-        pnChange.add(sales, BorderLayout.CENTER);
+        pnChange.add(menu, BorderLayout.CENTER);
         pnChange.repaint();
         pnChange.revalidate();
-    }//GEN-LAST:event_btnCTKMActionPerformed
+    }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
         // TODO add your handling code here:
@@ -266,6 +268,18 @@ public class NV extends javax.swing.JFrame {
         login.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnLogOutActionPerformed
+
+    private void btnCTKM1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCTKM1ActionPerformed
+        // TODO add your handling code here:
+        CTKM ctkm = new CTKM();
+        ctkm.setSize(1300, 800);
+        ctkm.setLocation(0, 0);
+        
+        pnChange.removeAll();
+        pnChange.add(ctkm, BorderLayout.CENTER);
+        pnChange.repaint();
+        pnChange.revalidate();
+    }//GEN-LAST:event_btnCTKM1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -303,8 +317,9 @@ public class NV extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCTKM;
+    private javax.swing.JButton btnCTKM1;
     private javax.swing.JButton btnLogOut;
+    private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnQLHD;
     private javax.swing.JButton btnQuanlyCTSP;
     private javax.swing.JButton btnQuanlyHDCT;
