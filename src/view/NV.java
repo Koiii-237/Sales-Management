@@ -37,7 +37,6 @@ public class NV extends javax.swing.JFrame {
         btnQuanlySP = new javax.swing.JButton();
         lbCloShop = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
-        btnQLHD = new javax.swing.JButton();
         pnChange = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnCTKM1 = new javax.swing.JButton();
@@ -88,15 +87,6 @@ public class NV extends javax.swing.JFrame {
             }
         });
 
-        btnQLHD.setBackground(new java.awt.Color(0, 153, 153));
-        btnQLHD.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnQLHD.setText("Quản Lý Hoá Đơn");
-        btnQLHD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQLHDActionPerformed(evt);
-            }
-        });
-
         pnChange.setBackground(new java.awt.Color(102, 102, 102));
 
         javax.swing.GroupLayout pnChangeLayout = new javax.swing.GroupLayout(pnChange);
@@ -136,7 +126,6 @@ public class NV extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnSideBarLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lbCloShop, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnQLHD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCTKM1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnChange, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -155,11 +144,9 @@ public class NV extends javax.swing.JFrame {
                 .addComponent(btnQuanlySP, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnQuanlyCTSP, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnQLHD, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(28, 28, 28)
                 .addComponent(btnQuanlyHDCT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(31, 31, 31)
                 .addComponent(btnCTKM1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
@@ -212,21 +199,9 @@ public class NV extends javax.swing.JFrame {
         pnChange.revalidate();
     }//GEN-LAST:event_btnQuanlyCTSPActionPerformed
 
-    private void btnQLHDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQLHDActionPerformed
-        // TODO add your handling code here:
-        HD bill = new HD();
-        bill.setSize(1300,  800);
-        bill.setLocation(0, 0);
-        
-        pnChange.removeAll();
-        pnChange.add(bill, BorderLayout.CENTER);
-        pnChange.repaint();
-        pnChange.revalidate();
-    }//GEN-LAST:event_btnQLHDActionPerformed
-
     private void btnQuanlyHDCTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyHDCTActionPerformed
         // TODO add your handling code here:
-        CTHD billDetail = new CTHD();
+        HDCT billDetail = new HDCT();
         billDetail.setSize(1300, 800);
         billDetail.setLocation(0, 0);
         
@@ -294,7 +269,6 @@ public class NV extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCTKM1;
     private javax.swing.JButton btnLogOut;
-    private javax.swing.JButton btnQLHD;
     private javax.swing.JButton btnQuanlyCTSP;
     private javax.swing.JButton btnQuanlyHDCT;
     private javax.swing.JButton btnQuanlySP;
