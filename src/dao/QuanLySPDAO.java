@@ -12,11 +12,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.sql.ResultSet;
+
 /**
  *
  * @author ADMIN
  */
 public class QuanLySPDAO {
+
     public Object[] getRow(SanPham sp) {
         String maSP = sp.getMaSP();
         String tenSP = sp.getTenSP();
@@ -26,14 +28,13 @@ public class QuanLySPDAO {
 
         return new Object[]{maSP, tenSP, donGia, ngayNhap, maMENU};
     }
-    
+
     public List<SanPham> getALL() {
         List<SanPham> listSP = new ArrayList<>();
         String sql = "SELECT * FROM SanPham";
-        try (Connection con = DBConnection.getConnection();  
-             Statement stm = con.createStatement();
-             ResultSet rs = stm.executeQuery(sql)) {
-            
+        try (
+                Connection con = DBConnection.getConnection(); Statement stm = con.createStatement(); ResultSet rs = stm.executeQuery(sql)) {
+
             while (rs.next()) {
                 String maSP = rs.getString(1);
                 String tenSP = rs.getString(2);
@@ -49,55 +50,68 @@ public class QuanLySPDAO {
         }
         return listSP;
     }
-    
+
     public int insert(SanPham sp) {
-         String sql = "INSERT INTO SanPham (maSP, tenSP, donGia, ngayNhap, maMENU) VALUES (?, ?, ?, ?, ?)";
-        try (Connection con = DBConnection.getConnection(); 
-             PreparedStatement pstmt = con.prepareStatement(sql)) {
-            
+        String sql = "INSERT INTO SanPham VALUES\n" +
+                     "(  ?  ,  ?  ,  ?  ,   ?   ,   ?   )";
+        try {
+            Connection con = DBConnection.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
             pstmt.setString(1, sp.getMaSP());
             pstmt.setString(2, sp.getTenSP());
             pstmt.setDouble(3, sp.getDonGia());
             pstmt.setString(4, sp.getNgayNhap());
             pstmt.setString(5, sp.getMaMENU());
-            
-            if (pstmt.executeUpdate() > 1) {
+
+            if (pstmt.executeUpdate() > 0) {
                 return 1;
             }
         } catch (Exception e) {
             e.printStackTrace();
-            
+
         }
         return 0;
-    } 
-    
-    public boolean update(SanPham sp) {
-        String sql = "UPDATE SanPham SET tenSP=?, donGia=?, ngayNhap=?, maMENU=? WHERE maSP=?";
-        try (Connection con = DBConnection.getConnection(); 
-             PreparedStatement pstmt = con.prepareStatement(sql)) {
-            
-            pstmt.setString(1, sp.getTenSP());
-            pstmt.setDouble(2, sp.getDonGia());
-            pstmt.setString(3, sp.getNgayNhap());
-            pstmt.setString(4, sp.getMaMENU());
-            pstmt.setString(5, sp.getMaSP());
-            
-            return pstmt.executeUpdate() > 0;
-            } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
     }
-    public boolean delete(String maSP) {
-        String sql = "DELETE FROM SanPham WHERE maSP=?";
-        try (Connection con = DBConnection.getConnection(); 
-             PreparedStatement pstmt = con.prepareStatement(sql)) {
-            
-            pstmt.setString(1, maSP);
-            return pstmt.executeUpdate() > 0;
+
+    public int update(SanPham sp, String TheoMa) {
+        String sql = "UPDATE SanPham SET MaSP = ?   ,\n" +
+"                                  TenSP =  ?  ,\n" +
+"				   DonGia =  ?  ,\n" +
+"				   NgayNhap =   ?  ,\n" +
+"				   MaMENU =  ?  \n" +
+"				   WHERE MaSP = ? ";
+        try {
+            Connection con = DBConnection.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, sp.getMaSP());
+            pstmt.setString(2, sp.getTenSP());
+            pstmt.setDouble(3, sp.getDonGia());
+            pstmt.setString(4, sp.getNgayNhap());
+            pstmt.setString(5, sp.getMaMENU());          
+            pstmt.setString(6, TheoMa);
+            if (pstmt.executeUpdate() > 0) {
+                return 1;
+            }
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
         }
+        return 0;
+    }
+
+    public int delete(String maSP) {
+        String sql = "DELETE FROM SanPham WHERE maSP=?";
+        try {
+            Connection con = DBConnection.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, maSP);
+            if (pstmt.executeUpdate() > 0) {
+                return 1;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+        return 0;
     }
 }

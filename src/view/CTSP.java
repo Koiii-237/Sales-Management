@@ -155,45 +155,39 @@ public class CTSP extends javax.swing.JPanel {
 
     }
 
-    public void deleteCTSP() {
-        try {
-            if (validateForm()) {
-                int index = tblCTSP.getSelectedRow();
-                if (index >= 0) {
-                    int choice = JOptionPane.showConfirmDialog(this, "Bạn có muốn sửa không?", "NOTIFICATION!!!", JOptionPane.YES_NO_OPTION);
-                    if (choice == JOptionPane.YES_OPTION) {
-                        String maCTSP = txtMaCTSP.getText();
-                        String maSP = txtMasp.getText();
-                        String tenSP = txtTensp.getText();
-                        double donGia = Double.parseDouble(txtDongia.getText());
-                        String ngayNhap = txtNgaynhap.getText();
-                        int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
-                        ChiTietSanPham ctsp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
-                        String id = ctsp.getMaSP();
-
-                        int result = ctspDao.delete(id);
-                        if (result == 1) {
-                            fillTable();
-                            JOptionPane.showMessageDialog(this, "Xóa chi tiết sản phẩm mới thành công!");
-                            reset();
-                        } else {
-                            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra!");
-                            reset();
-                        }
-                    }
-                    else{
-                        JOptionPane.showMessageDialog(this, "Hủy bỏ xóa dữ liệu!!!", "NOTIFICATION!!!", JOptionPane.INFORMATION_MESSAGE);
-                        reset();
-                    }
-                } else {
-                    JOptionPane.showMessageDialog(this, "Vui lòng chọn thông tin muốn sửa!!!", "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Lỗi: " + e.getMessage(), "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
+  public void deleteCTSP() {
+    try {
+        if (!validateForm()) {
+            return;
+        }
+        int index = tblCTSP.getSelectedRow();
+        if (index < 0) {
+            JOptionPane.showMessageDialog(this, "Vui lòng chọn thông tin muốn xóa!", "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
+            return;
         }
 
+        int choice = JOptionPane.showConfirmDialog(this, "Bạn có muốn xóa không?", "NOTIFICATION!!!", JOptionPane.YES_NO_OPTION);
+        if (choice != JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(this, "Hủy bỏ xóa dữ liệu!", "NOTIFICATION!!!", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        String maSP = txtMasp.getText();
+        int result = ctspDao.delete(maSP);
+
+        if (result == 1) {
+            fillTable();
+            JOptionPane.showMessageDialog(this, "Xóa chi tiết sản phẩm thành công!");
+        } else {
+            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra khi xóa!");
+        }
+        reset();
+
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(this, "Lỗi: " + e.getMessage(), "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
+        e.printStackTrace(); // Log for debugging
     }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
