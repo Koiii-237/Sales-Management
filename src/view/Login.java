@@ -22,7 +22,7 @@ public class Login extends javax.swing.JFrame {
      * Creates new form TrangChu
      */
     UserDAO usDAO = new UserDAO();
-    JFrame nv = new NV();
+    JFrame NV = new NV();
     JFrame admin = new ADMIN();
 
     public Login() {
@@ -207,7 +207,7 @@ public class Login extends javax.swing.JFrame {
         else if(resultCheckLogin == 1){
             if (resultCheckAccount == 1) {
                 JOptionPane.showMessageDialog(this, "Đăng Nhập Thành Công Bạn Là : Nhân Viên", "NOTIFICATION!", JOptionPane.INFORMATION_MESSAGE);
-                nv.setVisible(true);
+                    NV.setVisible(true);
                 this.dispose();
             } 
             else if (resultCheckAccount == 2) {
