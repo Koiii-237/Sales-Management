@@ -29,9 +29,9 @@ public class ChiTietHoaDDAO {
         return new Object[]{maCTHD, maHD, maKM, maCTSP, tenSP, donGia, trangThai};
     }
     
-    public List<ChiTietHoaDon> getALL() {
+    public List<ChiTietHoaDon> read() {
         List<ChiTietHoaDon> listCTHD = new ArrayList<>();
-        String sql = "SELECT * FROM CHITIETHOADON";
+        String sql = "SELECT * FROM ChiTietHoaDon";
         try (Connection con = DBConnection.getConnection();  
              Statement stm = con.createStatement();
              ResultSet rs = stm.executeQuery(sql)) {
@@ -54,8 +54,8 @@ public class ChiTietHoaDDAO {
         return listCTHD;
     }
     
-    public boolean insert(ChiTietHoaDon cthd) {
-         String sql = "INSERT INTO CHITIETHOADON (maCTHD, maHD, maKM, maCTSP, tenSP, donGia, trangThai) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    public int create(ChiTietHoaDon cthd) {
+         String sql = "INSERT INTO ChiTietHoaDon (maCTHD, maHD, maKM, maCTSP, tenSP, donGia, trangThai) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -67,14 +67,16 @@ public class ChiTietHoaDDAO {
             pstmt.setDouble(6, cthd.getDonGia());
             pstmt.setString(7, cthd.getTrangThai());
             
-            return pstmt.executeUpdate() > 0;
+            if(pstmt.executeUpdate() > 1){
+                return 1;
+            }
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
         }
+         return 0;
     }
     public boolean update(ChiTietHoaDon cthd) {
-        String sql = "UPDATE CHITIETHOADON SET maHD=?, maKM=?, maCTSP=?, tenSP=?, donGia=?, trangThai=? WHERE maCTHD=?";
+        String sql = "UPDATE ChiTietHoaDon SET maHD=?, maKM=?, maCTSP=?, tenSP=?, donGia=?, trangThai=? WHERE maCTHD=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -93,7 +95,7 @@ public class ChiTietHoaDDAO {
         }
     }
     public boolean delete(String maCTHD) {
-        String sql = "DELETE FROM CHITIETHOADON WHERE maCTHD=?";
+        String sql = "DELETE FROM ChiTietHoaDon WHERE maCTHD=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             

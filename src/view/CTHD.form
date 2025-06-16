@@ -16,18 +16,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
-              <Component id="lbCTHD" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="909" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                      <Component id="lbCTHD" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
@@ -59,17 +54,12 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnXoa" min="-2" pref="141" max="-2" attributes="0"/>
-                          <Component id="btnThem" min="-2" pref="141" max="-2" attributes="0"/>
-                          <Component id="btnLammoi" min="-2" pref="141" max="-2" attributes="0"/>
-                          <Component id="btnSua2" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                      <Component id="btnLammoi" min="-2" pref="141" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jScrollPane1" alignment="0" min="-2" pref="1303" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -83,51 +73,39 @@
                   <Component id="txtMaCTHD" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lbMaCTHD" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbMaHD" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtMaHD" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbMaNV" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtMaKM" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbMaCTSP" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtMaCTSP" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtTenSP" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbSoluong" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbTrangthai" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtTrangthai" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="btnLammoi" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="btnThem" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                      <Component id="btnSua2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                      <Component id="btnXoa" min="-2" max="-2" attributes="0"/>
-                  </Group>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbMaHD" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMaHD" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnLammoi" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="26" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbMaNV" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMaKM" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbMaCTSP" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMaCTSP" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtTenSP" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbSoluong" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbTrangthai" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTrangthai" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lbDongia" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtDongia" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="41" max="32767" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="807" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -169,14 +147,6 @@
         <Property name="text" type="java.lang.String" value="Tr&#x1ea1;ng th&#xe1;i:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnXoa">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="X&#xd3;A"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnXoaActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="lbDongia">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#x110;&#x1a1;n gi&#xe1;:"/>
@@ -195,19 +165,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtMaKM">
-    </Component>
-    <Component class="javax.swing.JButton" name="btnSua2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="S&#x1eec;A"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSua2ActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnThem">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="TH&#xca;M"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtDongia">
     </Component>

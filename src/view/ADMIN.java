@@ -141,7 +141,7 @@ public class ADMIN extends javax.swing.JFrame {
                 .addComponent(btnQuanlyHDCT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnCTKM, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 301, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
                 .addGap(184, 184, 184))
         );
@@ -153,11 +153,11 @@ public class ADMIN extends javax.swing.JFrame {
         pnChangee.setLayout(pnChangeeLayout);
         pnChangeeLayout.setHorizontalGroup(
             pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 736, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         pnChangeeLayout.setVerticalGroup(
             pnChangeeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 803, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         lbAdmin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -172,20 +172,22 @@ public class ADMIN extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(pnChangee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(pnChangee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(446, 446, 446)
                         .addComponent(lbAdmin)
-                        .addGap(328, 328, 328))))
+                        .addContainerGap(571, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(pnSideBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addComponent(lbAdmin)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addComponent(pnChangee, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(pnChangee, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -218,9 +220,15 @@ public class ADMIN extends javax.swing.JFrame {
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
         // TODO add your handling code here:
         Login login = new Login();
-        JOptionPane.showMessageDialog(this, "GOOD BYE!!!", "NOTIFICATOIN!!!", JOptionPane.INFORMATION_MESSAGE);
-        login.setVisible(true);
-        this.dispose();
+        int choice = JOptionPane.showConfirmDialog(this, "Bạn có muốn thoát không?", "NOTIFICATION!!!", JOptionPane.YES_NO_OPTION);
+        if(choice == JOptionPane.YES_OPTION){
+            JOptionPane.showMessageDialog(this, "Tạm biệt!!!", "NOTIFICATION!!!", JOptionPane.INFORMATION_MESSAGE);
+            login.setVisible(true);
+            this.dispose();
+        }
+        else{
+            JOptionPane.showMessageDialog(this, "Hủy đăng xuất!!!", "NOTIFICATION!!!", JOptionPane.INFORMATION_MESSAGE);
+        }
     }//GEN-LAST:event_btnLogOutActionPerformed
 
     private void btnQLHDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQLHDActionPerformed

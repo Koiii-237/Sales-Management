@@ -38,7 +38,6 @@ public class NV extends javax.swing.JFrame {
         lbCloShop = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
         btnQLHD = new javax.swing.JButton();
-        btnMenu = new javax.swing.JButton();
         pnChange = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnCTKM1 = new javax.swing.JButton();
@@ -98,15 +97,6 @@ public class NV extends javax.swing.JFrame {
             }
         });
 
-        btnMenu.setBackground(new java.awt.Color(0, 153, 153));
-        btnMenu.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnMenu.setText("MENU");
-        btnMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMenuActionPerformed(evt);
-            }
-        });
-
         pnChange.setBackground(new java.awt.Color(102, 102, 102));
 
         javax.swing.GroupLayout pnChangeLayout = new javax.swing.GroupLayout(pnChange);
@@ -146,7 +136,6 @@ public class NV extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnSideBarLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lbCloShop, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnMenu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnQLHD, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCTKM1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -172,8 +161,6 @@ public class NV extends javax.swing.JFrame {
                 .addComponent(btnQuanlyHDCT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnCTKM1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19)
-                .addComponent(btnMenu)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
                 .addGap(45, 45, 45))
@@ -249,18 +236,6 @@ public class NV extends javax.swing.JFrame {
         pnChange.revalidate();
     }//GEN-LAST:event_btnQuanlyHDCTActionPerformed
 
-    private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        // TODO add your handling code here:
-        MENU menu = new MENU();
-        menu.setSize(1300, 800);
-        menu.setLocation(0, 0);
-        
-        pnChange.removeAll();
-        pnChange.add(menu, BorderLayout.CENTER);
-        pnChange.repaint();
-        pnChange.revalidate();
-    }//GEN-LAST:event_btnMenuActionPerformed
-
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
         // TODO add your handling code here:
         Login login = new Login();
@@ -319,7 +294,6 @@ public class NV extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCTKM1;
     private javax.swing.JButton btnLogOut;
-    private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnQLHD;
     private javax.swing.JButton btnQuanlyCTSP;
     private javax.swing.JButton btnQuanlyHDCT;
