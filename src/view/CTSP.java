@@ -8,14 +8,16 @@ import dao.ChiTietSPDAO;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.ChiTietSanPham;
+
 /**
  *
  * @author ADMIN
  */
 public class CTSP extends javax.swing.JPanel {
-    
-DefaultTableModel tableModel;
+
+    DefaultTableModel tableModel;
     ChiTietSPDAO ctspDao = new ChiTietSPDAO();
+
     /**
      * Creates new form CTSP
      */
@@ -24,26 +26,30 @@ DefaultTableModel tableModel;
         initTable();
         fillTable();
     }
+
     public void initTable() {
         String[] cols = new String[]{"Mã CTSP", "Mã SP", "Tên SP", "Đơn Giá", "Ngày Nhập", "Số Lượng Sản Phẩm"};
         tableModel = new DefaultTableModel();
         tableModel.setColumnIdentifiers(cols);
         tblCTSP.setModel(tableModel);
     }
+
     public void fillTable() {
         tableModel.setRowCount(0);
         for (ChiTietSanPham km : ctspDao.getALL()) {
             tableModel.addRow(ctspDao.getRow(km));
         }
     }
-    public void reset(){
-         txtMaCTSP.setText("");
-         txtMasp.setText("");
-         txtTensp.setText("");
-         txtDongia.setText("");
-         txtNgaynhap.setText("");
-         txtSoluongSP.setText("");
-     }
+
+    public void reset() {
+        txtMaCTSP.setText("");
+        txtMasp.setText("");
+        txtTensp.setText("");
+        txtDongia.setText("");
+        txtNgaynhap.setText("");
+        txtSoluongSP.setText("");
+    }
+
     private boolean validateForm() {
         if (txtMaCTSP.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Vui lòng nhập mã chi tiết sản phẩm.");
@@ -69,9 +75,10 @@ DefaultTableModel tableModel;
             JOptionPane.showMessageDialog(this, "Vui lòng nhập số lượng sản phẩm.");
             return false;
         }
-        
-     }
-    public boolean showDetails() {
+        return true;
+    }
+
+    public void showDetails() {
         int i = tblCTSP.getSelectedRow();
         if (i >= 0) {
             ChiTietSanPham ctsp = ctspDao.getALL().get(i);
@@ -81,65 +88,111 @@ DefaultTableModel tableModel;
             txtDongia.setText(String.valueOf(ctsp.getDonGia()));
             txtNgaynhap.setText(String.valueOf(ctsp.getNgayNhap()));
             txtSoluongSP.setText(String.valueOf(ctsp.getSoLuongSanPham()));
-            return true;
         } else {
-            return false;
+            JOptionPane.showMessageDialog(this, "Vui lòng chọn thông tin ở trong bảng!!!", "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
         }
     }
+
     public void addCTSP() {
-        String maCTSP = txtMaCTSP.getText();
-        String maSP = txtMasp.getText();
-        String tenSP = txtTensp.getText();
-        double donGia = Double.parseDouble(txtDongia.getText());
-        String ngayNhap = txtNgaynhap.getText();
-        int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
-        ChiTietSanPham ctsp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
-        int result = ctspDao.insert(ctsp);
-        if (result == 1) {
-            fillTable();
-            JOptionPane.showMessageDialog(this, "Thêm chi tiết sản phẩm mới thành công!");
-        } else {
-            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra!");
+        try {
+            if (validateForm()) {
+                String maCTSP = txtMaCTSP.getText();
+                String maSP = txtMasp.getText();
+                String tenSP = txtTensp.getText();
+                double donGia = Double.parseDouble(txtDongia.getText());
+                String ngayNhap = txtNgaynhap.getText();
+                int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
+                ChiTietSanPham ctsp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
+                int result = ctspDao.insert(ctsp);
+                if (result == 1) {
+                    fillTable();
+                    JOptionPane.showMessageDialog(this, "Thêm chi tiết sản phẩm mới thành công!", "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
+                    reset();
+                } else {
+                    JOptionPane.showMessageDialog(this, "Có lỗi xảy ra!", "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
+                    reset();
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Lỗi: " + e.getMessage(), "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
         }
     }
+
     public void updateCTSP() {
-       int i = tblCTSP.getSelectedRow();
-       if (i >= 0) {
-        ChiTietSanPham ctspcu = ctspDao.getALL().get(i);
-        String MaCu = ctspcu.getMaCTSP();
-
-        String maCTSP = txtMaCTSP.getText();
-        String maSP = txtMasp.getText();
-        String tenSP = txtTensp.getText();
-        double donGia = Double.parseDouble(txtDongia.getText());
-        String ngayNhap = txtNgaynhap.getText();
-        int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
-        ChiTietSanPham ctspp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
-        int result = ctspDao.insert(ctspp);
-            if (result == 1) {
-            fillTable();
-            JOptionPane.showMessageDialog(this, "Sửa chi tiết sản phẩm thành công!");
-        } else {
-            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra khi sửa chi tiết sản phẩm!");
+        try {
+            if (validateForm()) {
+                int index = tblCTSP.getSelectedRow();
+                if (index >= 0) {
+                    String maCTSP = txtMaCTSP.getText();
+                    String maSP = txtMasp.getText();
+                    String tenSP = txtTensp.getText();
+                    double donGia = Double.parseDouble(txtDongia.getText());
+                    String ngayNhap = txtNgaynhap.getText();
+                    int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
+                    int choice = JOptionPane.showConfirmDialog(this, "Bạn có muốn sửa không?", "NOTIFICATION!!!", JOptionPane.YES_NO_OPTION);
+                    if (choice == JOptionPane.YES_OPTION) {
+                        ChiTietSanPham ctspp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
+                        int result = ctspDao.update(ctspp);
+                        if (result == 1) {
+                            fillTable();
+                            JOptionPane.showMessageDialog(this, "Sửa chi tiết sản phẩm thành công!");
+                            reset();
+                        } else {
+                            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra khi sửa chi tiết sản phẩm!");
+                            reset();
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(this, "Hủy bỏ chỉnh sửa!!", "NOTIFICATION!!!", JOptionPane.INFORMATION_MESSAGE);
+                        reset();
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(this, "Vui lòng chọn thông tin muốn sửa!!!", "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Lỗi: " + e.getMessage(), "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
         }
+
     }
-}
-    public void deleteCTSP() {
-        String maCTSP = txtMaCTSP.getText();
-        String maSP = txtMasp.getText();
-        String tenSP = txtTensp.getText();
-        double donGia = Double.parseDouble(txtDongia.getText());
-        String ngayNhap = txtNgaynhap.getText();
-       int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
-        ChiTietSanPham ctsp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
 
-        int result = ctspDao.insert(ctsp);
-            if (result == 1) {
-            fillTable();
-            JOptionPane.showMessageDialog(this, "Xóa chi tiết sản phẩm mới thành công!");
-        } else {
-            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra!");
+    public void deleteCTSP() {
+        try {
+            if (validateForm()) {
+                int index = tblCTSP.getSelectedRow();
+                if (index >= 0) {
+                    int choice = JOptionPane.showConfirmDialog(this, "Bạn có muốn sửa không?", "NOTIFICATION!!!", JOptionPane.YES_NO_OPTION);
+                    if (choice == JOptionPane.YES_OPTION) {
+                        String maCTSP = txtMaCTSP.getText();
+                        String maSP = txtMasp.getText();
+                        String tenSP = txtTensp.getText();
+                        double donGia = Double.parseDouble(txtDongia.getText());
+                        String ngayNhap = txtNgaynhap.getText();
+                        int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
+                        ChiTietSanPham ctsp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
+                        String id = ctsp.getMaSP();
+
+                        int result = ctspDao.delete(id);
+                        if (result == 1) {
+                            fillTable();
+                            JOptionPane.showMessageDialog(this, "Xóa chi tiết sản phẩm mới thành công!");
+                            reset();
+                        } else {
+                            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra!");
+                            reset();
+                        }
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(this, "Hủy bỏ xóa dữ liệu!!!", "NOTIFICATION!!!", JOptionPane.INFORMATION_MESSAGE);
+                        reset();
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(this, "Vui lòng chọn thông tin muốn sửa!!!", "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Lỗi: " + e.getMessage(), "NOTIFICATION!!!", JOptionPane.ERROR_MESSAGE);
         }
+
     }
 
     /**
@@ -226,6 +279,11 @@ DefaultTableModel tableModel;
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tblCTSP.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblCTSPMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblCTSP);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -333,6 +391,11 @@ DefaultTableModel tableModel;
         // TODO add your handling code here:
         addCTSP();
     }//GEN-LAST:event_btnThemActionPerformed
+
+    private void tblCTSPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblCTSPMouseClicked
+        // TODO add your handling code here:\
+        showDetails();
+    }//GEN-LAST:event_tblCTSPMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

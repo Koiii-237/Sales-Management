@@ -90,16 +90,18 @@ public class ChiTietSPDAO {
         }
         return 0;
     }
-     public boolean delete(String maCTSP) {
+     public int delete(String maCTSP) {
         String sql = "DELETE FROM ChiTietSanPham WHERE maCTSP=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
             pstmt.setString(1, maCTSP);
-            return pstmt.executeUpdate() > 0;
+            if(pstmt.executeUpdate() > 1){
+                return 1;
+            }
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
         }
+        return 0;
     }
 }

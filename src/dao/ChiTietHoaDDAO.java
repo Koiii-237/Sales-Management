@@ -56,7 +56,7 @@ public class ChiTietHoaDDAO {
     
     public int create(ChiTietHoaDon cthd) {
          String sql = "INSERT INTO ChiTietHoaDon (maCTHD, maHD, maKM, maCTSP, tenSP, donGia, trangThai) VALUES (?, ?, ?, ?, ?, ?, ?)";
-        try (Connection con = DBConnection.getConnection(); 
+        try (Connection con = DBConnection.getConnection();
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
             pstmt.setString(1, cthd.getMaCTHD());
