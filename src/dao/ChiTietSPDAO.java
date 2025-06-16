@@ -30,7 +30,7 @@ public class ChiTietSPDAO {
     
      public List<ChiTietSanPham> getALL() {
         List<ChiTietSanPham> listCTSP = new ArrayList<>();
-        String sql = "SELECT * FROM CHITIETSANPHAM";
+        String sql = "SELECT * FROM ChiTietSanPham";
         try (Connection con = DBConnection.getConnection();  
              Statement stm = con.createStatement();
              ResultSet rs = stm.executeQuery(sql)) {
@@ -52,7 +52,7 @@ public class ChiTietSPDAO {
         return listCTSP;
     }
      public boolean insert(ChiTietSanPham ctsp) {
-         String sql = "INSERT INTO CHITIETSANPHAM (maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham) VALUES (?, ?, ?, ?, ?, ?)";
+         String sql = "INSERT INTO ChiTietSanPham (maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham) VALUES (?, ?, ?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -69,7 +69,7 @@ public class ChiTietSPDAO {
         }
     }
      public boolean update(ChiTietSanPham ctsp) {
-        String sql = "UPDATE CHITIETSANPHAM SET maSP=?, tenSP=?, donGia=?, ngayNhap=?, soLuongSanPham=? WHERE maCTSP=?";
+        String sql = "UPDATE ChiTietSanPham SET maSP=?, tenSP=?, donGia=?, ngayNhap=?, soLuongSanPham=? WHERE maCTSP=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -87,7 +87,7 @@ public class ChiTietSPDAO {
         }
     }
      public boolean delete(String maCTSP) {
-        String sql = "DELETE FROM CHITIETSANPHAM WHERE maCTSP=?";
+        String sql = "DELETE FROM ChiTietSanPham WHERE maCTSP=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             

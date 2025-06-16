@@ -29,7 +29,7 @@ public class QuanLySPDAO {
     
     public List<SanPham> getALL() {
         List<SanPham> listSP = new ArrayList<>();
-        String sql = "SELECT * FROM SANPHAM";
+        String sql = "SELECT * FROM SanPham";
         try (Connection con = DBConnection.getConnection();  
              Statement stm = con.createStatement();
              ResultSet rs = stm.executeQuery(sql)) {
@@ -51,7 +51,7 @@ public class QuanLySPDAO {
     }
     
     public boolean insert(SanPham sp) {
-         String sql = "INSERT INTO CHITIETHOADON (maSP, tenSP, donGia, ngayNhap, maMENU) VALUES (?, ?, ?, ?, ?)";
+         String sql = "INSERT INTO SanPham (maSP, tenSP, donGia, ngayNhap, maMENU) VALUES (?, ?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -69,7 +69,7 @@ public class QuanLySPDAO {
     }
     
     public boolean update(SanPham sp) {
-        String sql = "UPDATE CHITIETHOADON SET tenSP=?, donGia=?, ngayNhap=?, maMENU=? WHERE maSP=?";
+        String sql = "UPDATE SanPham SET tenSP=?, donGia=?, ngayNhap=?, maMENU=? WHERE maSP=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -86,7 +86,7 @@ public class QuanLySPDAO {
         }
     }
     public boolean delete(String maSP) {
-        String sql = "DELETE FROM HOADON WHERE maSP=?";
+        String sql = "DELETE FROM SanPham WHERE maSP=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             

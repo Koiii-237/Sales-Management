@@ -28,7 +28,7 @@ public class ChuongTrinhKMDAO {
     }
      public List<ChuongTrinhKhuyenMai> getALL() {
         List<ChuongTrinhKhuyenMai> listCTKM = new ArrayList<>();
-        String sql = "SELECT * FROM CHUONGTRINHKHUYENMAI";
+        String sql = "SELECT * FROM ChuongTrinhKhuyenMai";
         try (Connection con = DBConnection.getConnection();  
              Statement stm = con.createStatement();
              ResultSet rs = stm.executeQuery(sql)) {
@@ -49,7 +49,7 @@ public class ChuongTrinhKMDAO {
         return listCTKM;
     }
      public boolean insert(ChuongTrinhKhuyenMai ctkm) {
-         String sql = "INSERT INTO CHUONGTRINHKHUYENMAI (maKM, phanTramKM, thoiGianBatDau, thoiGianKetThuc, maSP) VALUES (?, ?, ?, ?, ?)";
+         String sql = "INSERT INTO ChuongTrinhKhuyenMai (maKM, phanTramKM, thoiGianBatDau, thoiGianKetThuc, maSP) VALUES (?, ?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -65,7 +65,7 @@ public class ChuongTrinhKMDAO {
         }
     }
      public boolean update(ChuongTrinhKhuyenMai ctkm) {
-        String sql = "UPDATE CHUONGTRINHKHUYENMAI SET phanTramKM=?, thoiGianBatDau=?, thoiGianKetThuc=?, maSP=? WHERE maKM=?";
+        String sql = "UPDATE ChuongTrinhKhuyenMai SET phanTramKM=?, thoiGianBatDau=?, thoiGianKetThuc=?, maSP=? WHERE maKM=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -82,7 +82,7 @@ public class ChuongTrinhKMDAO {
         }
     }
      public boolean delete(String maKM) {
-        String sql = "DELETE FROM CHUONGTRINHKHUYENMAI WHERE maKM=?";
+        String sql = "DELETE FROM ChuongTrinhKhuyenMai WHERE maKM=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             

@@ -31,7 +31,7 @@ public class HoaDonDAO {
     }
     public List<HoaDon> getALL() {
         List<HoaDon> listHD = new ArrayList<>();
-        String sql = "SELECT * FROM HOADON";
+        String sql = "SELECT * FROM HoaDon";
         try (Connection con = DBConnection.getConnection();  
              Statement stm = con.createStatement();
              ResultSet rs = stm.executeQuery(sql)) {
@@ -55,7 +55,7 @@ public class HoaDonDAO {
         return listHD;
     }
     public boolean insert(HoaDon hd) {
-         String sql = "INSERT INTO HOADON (maHD, maSP, maNV, tenSP, trangThai, donGia, thoiGianThanhToan, soLuong) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+         String sql = "INSERT INTO HoaDon (maHD, maSP, maNV, tenSP, trangThai, donGia, thoiGianThanhToan, soLuong) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -75,7 +75,7 @@ public class HoaDonDAO {
         }
     }
     public boolean update(HoaDon hd) {
-        String sql = "UPDATE HOADON SET maSP=?, maNV=?, tenSP=?, trangThai=?, donGia=?, thoiGianThanhToan=?, soLuong=? WHERE maHD=?";
+        String sql = "UPDATE HoaDon SET maSP=?, maNV=?, tenSP=?, trangThai=?, donGia=?, thoiGianThanhToan=?, soLuong=? WHERE maHD=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
@@ -95,7 +95,7 @@ public class HoaDonDAO {
         }
     }
     public boolean delete(String maHD) {
-        String sql = "DELETE FROM HOADON WHERE maHD=?";
+        String sql = "DELETE FROM HoaDon WHERE maHD=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             
