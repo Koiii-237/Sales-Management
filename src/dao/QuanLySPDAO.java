@@ -50,7 +50,7 @@ public class QuanLySPDAO {
         return listSP;
     }
     
-    public boolean insert(SanPham sp) {
+    public int insert(SanPham sp) {
          String sql = "INSERT INTO SanPham (maSP, tenSP, donGia, ngayNhap, maMENU) VALUES (?, ?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
@@ -61,12 +61,15 @@ public class QuanLySPDAO {
             pstmt.setString(4, sp.getNgayNhap());
             pstmt.setString(5, sp.getMaMENU());
             
-            return pstmt.executeUpdate() > 0;
+            if (pstmt.executeUpdate() > 1) {
+                return 1;
+            }
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
+            
         }
-    }
+        return 0;
+    } 
     
     public boolean update(SanPham sp) {
         String sql = "UPDATE SanPham SET tenSP=?, donGia=?, ngayNhap=?, maMENU=? WHERE maSP=?";

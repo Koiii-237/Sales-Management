@@ -17,45 +17,49 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="lbMaKM" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbThoigianbatdau" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbPhantramKM" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbThoigianketthuc" min="-2" max="-2" attributes="0"/>
-                          <Component id="lbMaSP" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtPhantramKM" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
-                          <Component id="txtMaKM" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
-                          <Component id="txtThoigianbatdau" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
-                          <Component id="lbCTHD" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtThoigianketthuc" min="-2" pref="254" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="txtMaSP" min="-2" pref="254" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btnSua2" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btnThem" alignment="0" max="32767" attributes="0"/>
-                  <Component id="btnLammoi" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="btnXoa" min="-2" pref="111" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="lbMaKM" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbThoigianbatdau" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbPhantramKM" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbThoigianketthuc" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbMaSP" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtPhantramKM" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
+                                  <Component id="txtMaKM" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
+                                  <Component id="txtThoigianbatdau" alignment="0" min="-2" pref="254" max="-2" attributes="0"/>
+                                  <Component id="lbCTHD" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtThoigianketthuc" min="-2" pref="254" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="txtMaSP" min="-2" pref="254" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnSua2" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnThem" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnLammoi" alignment="0" pref="111" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnXoa" min="-2" pref="111" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -89,22 +93,22 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="btnLammoi" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Component id="btnThem" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="btnSua2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="btnXoa" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lbMaSP" min="-2" max="-2" attributes="0"/>
                   <Component id="txtMaSP" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="68" max="32767" attributes="0"/>
+              <EmptySpace pref="62" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -158,6 +162,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="L&#xc0;M M&#x1eda;I"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLammoiActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lbThoigianketthuc">
       <Properties>
@@ -191,6 +198,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="TH&#xca;M"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThemActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtPhantramKM">
       <Events>

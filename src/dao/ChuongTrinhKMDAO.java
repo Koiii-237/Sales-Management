@@ -48,7 +48,7 @@ public class ChuongTrinhKMDAO {
         }
         return listCTKM;
     }
-     public boolean insert(ChuongTrinhKhuyenMai ctkm) {
+     public int insert(ChuongTrinhKhuyenMai ctkm) {
          String sql = "INSERT INTO ChuongTrinhKhuyenMai (maKM, phanTramKM, thoiGianBatDau, thoiGianKetThuc, maSP) VALUES (?, ?, ?, ?, ?)";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
@@ -58,13 +58,16 @@ public class ChuongTrinhKMDAO {
             pstmt.setString(3, ctkm.getThoiGianBatDau());
             pstmt.setString(4, ctkm.getThoiGianKetThuc());
             pstmt.setString(5, ctkm.getMaSP());
-            return pstmt.executeUpdate() > 0;
+            if (pstmt.executeUpdate() > 1) {
+                return 1;
+            }
         } catch (Exception e) {
             e.printStackTrace();
-            return false;
+            
         }
-    }
-     public boolean update(ChuongTrinhKhuyenMai ctkm) {
+        return 0;
+    } 
+     public int update(ChuongTrinhKhuyenMai ctkm) {
         String sql = "UPDATE ChuongTrinhKhuyenMai SET phanTramKM=?, thoiGianBatDau=?, thoiGianKetThuc=?, maSP=? WHERE maKM=?";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
@@ -75,11 +78,13 @@ public class ChuongTrinhKMDAO {
             pstmt.setString(4, ctkm.getMaSP());
             pstmt.setString(5, ctkm.getMaKM());
 
-            return pstmt.executeUpdate() > 0;
+             if (pstmt.executeUpdate() > 1) {
+                return 1;
+            }
             } catch (Exception e) {
             e.printStackTrace();
-            return false;
         }
+        return 0;
     }
      public boolean delete(String maKM) {
         String sql = "DELETE FROM ChuongTrinhKhuyenMai WHERE maKM=?";

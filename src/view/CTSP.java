@@ -4,17 +4,142 @@
  */
 package view;
 
+import dao.ChiTietSPDAO;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import model.ChiTietSanPham;
 /**
  *
  * @author ADMIN
  */
 public class CTSP extends javax.swing.JPanel {
-
+    
+DefaultTableModel tableModel;
+    ChiTietSPDAO ctspDao = new ChiTietSPDAO();
     /**
      * Creates new form CTSP
      */
     public CTSP() {
         initComponents();
+        initTable();
+        fillTable();
+    }
+    public void initTable() {
+        String[] cols = new String[]{"Mã CTSP", "Mã SP", "Tên SP", "Đơn Giá", "Ngày Nhập", "Số Lượng Sản Phẩm"};
+        tableModel = new DefaultTableModel();
+        tableModel.setColumnIdentifiers(cols);
+        tblCTSP.setModel(tableModel);
+    }
+    public void fillTable() {
+        tableModel.setRowCount(0);
+        for (ChiTietSanPham km : ctspDao.getALL()) {
+            tableModel.addRow(ctspDao.getRow(km));
+        }
+    }
+    public void reset(){
+         txtMaCTSP.setText("");
+         txtMasp.setText("");
+         txtTensp.setText("");
+         txtDongia.setText("");
+         txtNgaynhap.setText("");
+         txtSoluongSP.setText("");
+     }
+    private boolean validateForm() {
+        if (txtMaCTSP.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập mã chi tiết sản phẩm.");
+            return false;
+        }
+        if (txtMasp.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập mã sản phẩm.");
+            return false;
+        }
+        if (txtTensp.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập tên sản phẩm.");
+            return false;
+        }
+        if (txtDongia.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập đơn giá.");
+            return false;
+        }
+        if (txtNgaynhap.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập ngày.");
+            return false;
+        }
+        if (txtSoluongSP.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập số lượng sản phẩm.");
+            return false;
+        }
+        
+     }
+    public boolean showDetails() {
+        int i = tblCTSP.getSelectedRow();
+        if (i >= 0) {
+            ChiTietSanPham ctsp = ctspDao.getALL().get(i);
+            txtMaCTSP.setText(String.valueOf(ctsp.getMaCTSP()));
+            txtMasp.setText(String.valueOf(ctsp.getMaSP()));
+            txtTensp.setText(String.valueOf(ctsp.getTenSP()));
+            txtDongia.setText(String.valueOf(ctsp.getDonGia()));
+            txtNgaynhap.setText(String.valueOf(ctsp.getNgayNhap()));
+            txtSoluongSP.setText(String.valueOf(ctsp.getSoLuongSanPham()));
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public void addCTSP() {
+        String maCTSP = txtMaCTSP.getText();
+        String maSP = txtMasp.getText();
+        String tenSP = txtTensp.getText();
+        double donGia = Double.parseDouble(txtDongia.getText());
+        String ngayNhap = txtNgaynhap.getText();
+        int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
+        ChiTietSanPham ctsp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
+        int result = ctspDao.insert(ctsp);
+        if (result == 1) {
+            fillTable();
+            JOptionPane.showMessageDialog(this, "Thêm chi tiết sản phẩm mới thành công!");
+        } else {
+            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra!");
+        }
+    }
+    public void updateCTSP() {
+       int i = tblCTSP.getSelectedRow();
+       if (i >= 0) {
+        ChiTietSanPham ctspcu = ctspDao.getALL().get(i);
+        String MaCu = ctspcu.getMaCTSP();
+
+        String maCTSP = txtMaCTSP.getText();
+        String maSP = txtMasp.getText();
+        String tenSP = txtTensp.getText();
+        double donGia = Double.parseDouble(txtDongia.getText());
+        String ngayNhap = txtNgaynhap.getText();
+        int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
+        ChiTietSanPham ctspp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
+        int result = ctspDao.insert(ctspp);
+            if (result == 1) {
+            fillTable();
+            JOptionPane.showMessageDialog(this, "Sửa chi tiết sản phẩm thành công!");
+        } else {
+            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra khi sửa chi tiết sản phẩm!");
+        }
+    }
+}
+    public void deleteCTSP() {
+        String maCTSP = txtMaCTSP.getText();
+        String maSP = txtMasp.getText();
+        String tenSP = txtTensp.getText();
+        double donGia = Double.parseDouble(txtDongia.getText());
+        String ngayNhap = txtNgaynhap.getText();
+       int soLuongSanPham = Integer.parseInt(txtSoluongSP.getText());
+        ChiTietSanPham ctsp = new ChiTietSanPham(maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham);
+
+        int result = ctspDao.insert(ctsp);
+            if (result == 1) {
+            fillTable();
+            JOptionPane.showMessageDialog(this, "Xóa chi tiết sản phẩm mới thành công!");
+        } else {
+            JOptionPane.showMessageDialog(this, "Có lỗi xảy ra!");
+        }
     }
 
     /**
@@ -51,6 +176,11 @@ public class CTSP extends javax.swing.JPanel {
         lbChitietsanpham.setText("Chi Tiết Sản Phẩm");
 
         btnLammoi.setText("LÀM MỚI");
+        btnLammoi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLammoiActionPerformed(evt);
+            }
+        });
 
         btnSua.setText("SỬA");
         btnSua.addActionListener(new java.awt.event.ActionListener() {
@@ -64,6 +194,11 @@ public class CTSP extends javax.swing.JPanel {
         lbDongia.setText("Đơn giá:");
 
         btnThem.setText("THÊM");
+        btnThem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnThemActionPerformed(evt);
+            }
+        });
 
         btnXoa.setText("XÓA");
         btnXoa.addActionListener(new java.awt.event.ActionListener() {
@@ -181,11 +316,23 @@ public class CTSP extends javax.swing.JPanel {
 
     private void btnSuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuaActionPerformed
         // TODO add your handling code here:
+        updateCTSP();
     }//GEN-LAST:event_btnSuaActionPerformed
 
     private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
         // TODO add your handling code here:
+        deleteCTSP();
     }//GEN-LAST:event_btnXoaActionPerformed
+
+    private void btnLammoiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLammoiActionPerformed
+        // TODO add your handling code here:
+        reset();
+    }//GEN-LAST:event_btnLammoiActionPerformed
+
+    private void btnThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemActionPerformed
+        // TODO add your handling code here:
+        addCTSP();
+    }//GEN-LAST:event_btnThemActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
