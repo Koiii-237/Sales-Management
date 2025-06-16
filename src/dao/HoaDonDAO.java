@@ -106,5 +106,19 @@ public class HoaDonDAO {
             return false;
         }
     }
+    
+    public double getTongTienHoaDon(String maHD) {
+        String sql = "SELECT SUM(DonGia) FROM ChiTietHoaDon WHERE MaHD = ?";
+        try (Connection con = DBConnection.getConnection(); PreparedStatement pstm = con.prepareStatement(sql)) {
 
+            pstm.setString(1, maHD);
+            ResultSet rs = pstm.executeQuery();
+            if (rs.next()) {
+                return rs.getDouble(1);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
 }

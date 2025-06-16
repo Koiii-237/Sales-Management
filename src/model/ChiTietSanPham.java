@@ -13,8 +13,8 @@ public class ChiTietSanPham {
     private String maCTSP;
     private String maSP;
     private String tenSP;
-    private double donGia;
     private String ngayNhap;
+    private double donGia;
     private int soLuongSanPham;
 
     public ChiTietSanPham() {

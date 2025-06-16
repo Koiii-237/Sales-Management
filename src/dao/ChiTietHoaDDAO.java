@@ -32,7 +32,7 @@ public class ChiTietHoaDDAO {
     public List<ChiTietHoaDon> read() {
         List<ChiTietHoaDon> listCTHD = new ArrayList<>();
         String sql = "SELECT * FROM ChiTietHoaDon";
-        try (Connection con = DBConnection.getConnection();  
+        try (Connection con = DBConnection.getConnection();
              Statement stm = con.createStatement();
              ResultSet rs = stm.executeQuery(sql)) {
             

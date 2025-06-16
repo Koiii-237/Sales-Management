@@ -37,9 +37,9 @@ public class QuanLySPDAO {
             while (rs.next()) {
                 String maSP = rs.getString(1);
                 String tenSP = rs.getString(2);
-                double donGia = rs.getDouble(4);
-                String ngayNhap = rs.getString(5);
-                String maMENU = rs.getString(6);
+                double donGia = rs.getDouble(3);
+                String ngayNhap = rs.getString(4);
+                String maMENU = rs.getString(5);
 
                 SanPham sp = new SanPham(maSP, tenSP, donGia, ngayNhap, maMENU);
                 listSP.add(sp);
