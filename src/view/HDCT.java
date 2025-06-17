@@ -79,6 +79,7 @@ public class HDCT extends javax.swing.JPanel {
         }
     }
     
+    
     public boolean checkForm() {
         if (txtMaHD.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Yêu cầu nhập Mã Hóa Đơn", "Lỗi", JOptionPane.ERROR_MESSAGE);

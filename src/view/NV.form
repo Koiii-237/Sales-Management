@@ -56,7 +56,6 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnLogOut" alignment="0" max="32767" attributes="0"/>
                       <Component id="btnQuanlyCTSP" alignment="1" max="32767" attributes="0"/>
-                      <Component id="btnQuanlyHDCT" alignment="1" max="32767" attributes="0"/>
                       <Component id="btnQuanlySP" alignment="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -84,9 +83,7 @@
                   <Component id="btnQuanlySP" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnQuanlyCTSP" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                  <Component id="btnQuanlyHDCT" min="-2" pref="39" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnCTKM1" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="btnLogOut" min="-2" max="-2" attributes="0"/>
@@ -114,20 +111,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuanlyCTSPActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnQuanlyHDCT">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="99" red="0" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; Ho&#xe1; &#x110;&#x1a1;n Chi Ti&#x1ebf;t"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQuanlyHDCTActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnQuanlySP">

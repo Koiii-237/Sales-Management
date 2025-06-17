@@ -33,7 +33,6 @@ public class NV extends javax.swing.JFrame {
 
         pnSideBar = new javax.swing.JPanel();
         btnQuanlyCTSP = new javax.swing.JButton();
-        btnQuanlyHDCT = new javax.swing.JButton();
         btnQuanlySP = new javax.swing.JButton();
         lbCloShop = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
@@ -52,15 +51,6 @@ public class NV extends javax.swing.JFrame {
         btnQuanlyCTSP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnQuanlyCTSPActionPerformed(evt);
-            }
-        });
-
-        btnQuanlyHDCT.setBackground(new java.awt.Color(0, 153, 153));
-        btnQuanlyHDCT.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnQuanlyHDCT.setText("Quản Lý Hoá Đơn Chi Tiết");
-        btnQuanlyHDCT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnQuanlyHDCTActionPerformed(evt);
             }
         });
 
@@ -121,7 +111,6 @@ public class NV extends javax.swing.JFrame {
                 .addGroup(pnSideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnLogOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnQuanlyCTSP, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnQuanlyHDCT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnQuanlySP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnSideBarLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -144,9 +133,7 @@ public class NV extends javax.swing.JFrame {
                 .addComponent(btnQuanlySP, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnQuanlyCTSP, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(btnQuanlyHDCT, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
+                .addGap(18, 18, 18)
                 .addComponent(btnCTKM1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnLogOut)
@@ -198,18 +185,6 @@ public class NV extends javax.swing.JFrame {
         pnChange.repaint();
         pnChange.revalidate();
     }//GEN-LAST:event_btnQuanlyCTSPActionPerformed
-
-    private void btnQuanlyHDCTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanlyHDCTActionPerformed
-        // TODO add your handling code here:
-        HDCT billDetail = new HDCT();
-        billDetail.setSize(1300, 800);
-        billDetail.setLocation(0, 0);
-        
-        pnChange.removeAll();
-        pnChange.add(billDetail, BorderLayout.CENTER);
-        pnChange.repaint();
-        pnChange.revalidate();
-    }//GEN-LAST:event_btnQuanlyHDCTActionPerformed
 
     private void btnLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutActionPerformed
         // TODO add your handling code here:
@@ -270,7 +245,6 @@ public class NV extends javax.swing.JFrame {
     private javax.swing.JButton btnCTKM1;
     private javax.swing.JButton btnLogOut;
     private javax.swing.JButton btnQuanlyCTSP;
-    private javax.swing.JButton btnQuanlyHDCT;
     private javax.swing.JButton btnQuanlySP;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lbCloShop;
