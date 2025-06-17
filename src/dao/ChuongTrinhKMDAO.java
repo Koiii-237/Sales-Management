@@ -49,7 +49,7 @@ public class ChuongTrinhKMDAO {
         return listCTKM;
     }
      public int insert(ChuongTrinhKhuyenMai ctkm) {
-         String sql = "INSERT INTO ChuongTrinhKhuyenMai (maKM, phanTramKM, thoiGianBatDau, thoiGianKetThuc, maSP) VALUES (?, ?, ?, ?, ?)";
+         String sql = "INSERT INTO ChuongTrinhKhuyenMai VALUES (?, ?, ?, ?, ?);";
         try (Connection con = DBConnection.getConnection(); 
              PreparedStatement pstmt = con.prepareStatement(sql)) {
             

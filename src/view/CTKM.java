@@ -191,6 +191,11 @@ public class CTKM extends javax.swing.JPanel {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tblCTKM.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblCTKMMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblCTKM);
 
         lbMaSP.setText("Mã SP:");
@@ -355,6 +360,11 @@ public class CTKM extends javax.swing.JPanel {
         // TODO add your handling code here:
         addKM();
     }//GEN-LAST:event_btnThemActionPerformed
+
+    private void tblCTKMMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblCTKMMouseClicked
+        // TODO add your handling code here:
+        showDetails();
+    }//GEN-LAST:event_tblCTKMMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

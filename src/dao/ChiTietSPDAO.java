@@ -12,11 +12,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.sql.ResultSet;
+
 /**
  *
  * @author ADMIN
  */
 public class ChiTietSPDAO {
+
     public Object[] getRow(ChiTietSanPham ctsp) {
         String maCTSP = ctsp.getMaCTSP();
         String maSP = ctsp.getMaSP();
@@ -25,16 +27,18 @@ public class ChiTietSPDAO {
         String ngayNhap = ctsp.getNgayNhap();
         int soLuongSanPham = ctsp.getSoLuongSanPham();
 
-        return new Object[]{maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham};
+        Object[] obj = new Object[]{maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham};
+        return obj;
     }
-    
-     public List<ChiTietSanPham> getALL() {
+
+    public List<ChiTietSanPham> getALL() {
         List<ChiTietSanPham> listCTSP = new ArrayList<>();
         String sql = "SELECT * FROM ChiTietSanPham";
-        try (Connection con = DBConnection.getConnection();  
-             Statement stm = con.createStatement();
-             ResultSet rs = stm.executeQuery(sql)) {
-            
+        try {
+            Connection con = DBConnection.getConnection();
+            Statement stm = con.createStatement();
+            ResultSet rs = stm.executeQuery(sql);
+
             while (rs.next()) {
                 String maCTSP = rs.getString(1);
                 String maSP = rs.getString(2);
@@ -51,52 +55,65 @@ public class ChiTietSPDAO {
         }
         return listCTSP;
     }
-     public int insert(ChiTietSanPham ctsp) {
-         String sql = "INSERT INTO ChiTietSanPham (maCTSP, maSP, tenSP, donGia, ngayNhap, soLuongSanPham) VALUES (?, ?, ?, ?, ?, ?)";
-        try (Connection con = DBConnection.getConnection(); 
-             PreparedStatement pstmt = con.prepareStatement(sql)) {
-            
+
+    public int insert(ChiTietSanPham ctsp) {
+        String sql = "INSERT INTO ChiTietSanPham  VALUES (?, ?, ?, ?, ?, ?)";
+        try {
+            Connection con = DBConnection.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+
             pstmt.setString(1, ctsp.getMaCTSP());
             pstmt.setString(2, ctsp.getMaSP());
             pstmt.setString(3, ctsp.getTenSP());
             pstmt.setDouble(4, ctsp.getDonGia());
             pstmt.setString(5, ctsp.getNgayNhap());
             pstmt.setInt(6, ctsp.getSoLuongSanPham());
-            if (pstmt.executeUpdate() > 1) {
+            if (pstmt.executeUpdate() > 0) {
                 return 1;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
         return 0;
-    } 
-     public int update(ChiTietSanPham ctsp) {
-        String sql = "UPDATE ChiTietSanPham SET maSP=?, tenSP=?, donGia=?, ngayNhap=?, soLuongSanPham=? WHERE maCTSP=?";
-        try (Connection con = DBConnection.getConnection(); 
-             PreparedStatement pstmt = con.prepareStatement(sql)) {
-            
-            pstmt.setString(1, ctsp.getMaSP());
-            pstmt.setString(2, ctsp.getTenSP());
-            pstmt.setDouble(3, ctsp.getDonGia());
-            pstmt.setString(4, ctsp.getNgayNhap());
-            pstmt.setInt(5, ctsp.getSoLuongSanPham());
-            pstmt.setString(6, ctsp.getMaCTSP());
+    }
 
-            if (pstmt.executeUpdate() > 1) {
+    public int update(ChiTietSanPham ctsp, String TheoMa) {
+        String sql = "UPDATE ChiTietSanPham SET MaCTSP = ? ,\n"
+                + "                          maSP =  ? ,\n"
+                + "                          tenSP = ?  ,\n"
+                + "			     donGia =  ?  ,\n"
+                + "			     ngayNhap = ?  , \n"
+                + "			     soLuongSanPham = ? \n"
+                + "			     WHERE maCTSP = ?  ";
+        try {
+            Connection con = DBConnection.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+
+            pstmt.setString(1, ctsp.getMaCTSP());
+            pstmt.setString(2, ctsp.getMaSP());
+            pstmt.setString(3, ctsp.getTenSP());
+            pstmt.setDouble(4, ctsp.getDonGia());
+            pstmt.setString(5, ctsp.getNgayNhap());
+            pstmt.setInt(6, ctsp.getSoLuongSanPham());
+            pstmt.setString(7, TheoMa);
+
+            if (pstmt.executeUpdate() > 0) {
                 return 1;
             }
-            } catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return 0;
     }
-     public int delete(String maCTSP) {
-        String sql = "DELETE FROM ChiTietSanPham WHERE maCTSP=?";
-        try (Connection con = DBConnection.getConnection(); 
-             PreparedStatement pstmt = con.prepareStatement(sql)) {
-            
+
+    public int delete(String maCTSP) {
+        String sql = "DELETE FROM ChiTietSanPham WHERE maCTSP = ?";
+        try {
+            Connection con = DBConnection.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+
             pstmt.setString(1, maCTSP);
-            if(pstmt.executeUpdate() > 1){
+            if (pstmt.executeUpdate() > 0) {
                 return 1;
             }
         } catch (Exception e) {
